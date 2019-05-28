@@ -83,9 +83,15 @@ for (xx=0;xx<=width;xx++) {
 			if world_block[# xx-1,world_top[# xx,0]+1]=0 {
 				//Check to the bottom right
 				if world_block[# xx+1,world_top[# xx,0]+1]=0 {
+					//Check to the bottom left
+					if world_block[# xx-1,world_top[# xx,0]+2]=0 {
+						//Check to the bottom right
+						if world_block[# xx+1,world_top[# xx,0]+2]=0 {
 							//If there is air all around the bottom of the block, it will move up one to fit in
 							world_top[# xx,0]-=1
-							//world_block[# xx,world_top[# xx,0]+7]=1
+							world_block[# xx,world_top[# xx,0]+7]=1
+						}
+					}
 				}
 			}*/
 		}
