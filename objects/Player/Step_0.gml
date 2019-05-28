@@ -12,7 +12,7 @@ if place_meeting(x,y+1,obj_block_parent)
 }
 else 
 {
-grounded = false;
+	grounded = false;
 }
 
 
