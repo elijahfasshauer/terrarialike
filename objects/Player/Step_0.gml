@@ -12,19 +12,18 @@ if place_meeting(x,y+1,obj_block_parent)
 }
 else 
 {
-grounded = false;
+	grounded = false;
 }
 
+ys+=1
 
-if (!grounded) //if on the ground the speed the player falls at will increase to the value of g
-{
-	ys = ys - g;
+
+
+if place_meeting(x,y+ys,obj_block_parent) {
+	while(!place_meeting(x,y+1,obj_block_parent)) {
+		y+=1
+	}
+	ys=0
 }
-if (grounded)
-{
-	ys = 0;
-}
 
-y -= ys;
-
-
+y += ys;
