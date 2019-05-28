@@ -66,6 +66,10 @@ if keyboard_check(vk_left) && keyboard_check(vk_right) {
 	{
 		xs += xa*3
 	}
+	if xs < .1 && xs > -.1
+	{
+	xs = 0
+	}
 }
 
 if !keyboard_check(vk_left) && !keyboard_check(vk_right) {
@@ -75,6 +79,10 @@ if !keyboard_check(vk_left) && !keyboard_check(vk_right) {
 	if xs < 0 
 	{
 		xs += xa*3
+	}
+	if xs < .1 && xs > -.1
+	{
+	xs = 0
 	}
 }
 
