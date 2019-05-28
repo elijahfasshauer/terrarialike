@@ -15,7 +15,7 @@ else
 	grounded = false;
 }
 
-ys+=1
+ys+=g;
 
 
 
@@ -27,3 +27,24 @@ if place_meeting(x,y+ys,obj_block_parent) {
 }
 
 y += ys;
+
+
+
+
+if keyboard_check_pressed(vk_up)
+{
+	
+}
+if keyboard_check_pressed(vk_down)
+{
+	
+}
+if keyboard_check_pressed(vk_left)
+{
+	xs = -1;
+}
+if keyboard_check_pressed(vk_right)
+{
+	xs = 1;
+}
+x += xs;
