@@ -1,10 +1,7 @@
 /// @description Generate the world
 
 //The blocks are 13 pixels for now :)
-var b_w;
 b_w = 13;
-var width;
-var height;
 width = room_width/b_w;
 height = room_height/b_w;
 
@@ -72,7 +69,9 @@ for (xx=0;xx<=width;xx++) {
 							
 							//If there is air all around the top of the block, it will move down one to fit in better
 							world_top[# xx,0]+=1
-							world_block[# xx,world_top[# xx,0]-7]=1
+							world_block[# xx,world_top[# xx,0]-1]=0
+							world_block[# xx,world_top[# xx,0]]=1
+							world_block[# xx,world_top[# xx,0]-5]=1
 							
 						}
 					}
