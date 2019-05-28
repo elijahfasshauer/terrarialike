@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "d370adec-5bdf-40a7-90f0-380219978a26",
+            "Value": {
+                "id": "a0dbeca4-6355-4cfd-8ba3-4277fbc04e8a",
+                "resourcePath": "scripts\\scr_perlin\\scr_perlin.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f245c0bb-9294-4ba6-b977-573a946597c1",
             "Value": {
                 "id": "356dc15e-b09e-4061-833c-46432be2745e",
@@ -256,7 +264,8 @@
         }
     ],
     "script_order": [
-        "349cd63a-fdfe-4d5f-ac9f-dc2bc5374e7b"
+        "349cd63a-fdfe-4d5f-ac9f-dc2bc5374e7b",
+        "d370adec-5bdf-40a7-90f0-380219978a26"
     ],
     "tutorial": ""
 }
