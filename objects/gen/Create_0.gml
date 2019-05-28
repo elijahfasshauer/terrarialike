@@ -78,7 +78,7 @@ for (xx=0;xx<=width;xx++) {
 				}
 			}
 			
-			
+			/*
 			//Check to the bottom left
 			if world_block[# xx-1,world_top[# xx,0]+1]=0 {
 				//Check to the bottom right
@@ -87,7 +87,7 @@ for (xx=0;xx<=width;xx++) {
 							world_top[# xx,0]-=1
 							//world_block[# xx,world_top[# xx,0]+7]=1
 				}
-			}
+			}*/
 		}
 	}
 }
