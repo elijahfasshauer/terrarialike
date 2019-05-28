@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "349cd63a-fdfe-4d5f-ac9f-dc2bc5374e7b",
+            "Value": {
+                "id": "e3809627-052d-4358-9af7-2d2556a04901",
+                "resourcePath": "scripts\\scr_terrain\\scr_terrain.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3d9c20a2-dfc0-4c21-adbb-c7028cba7fb0",
             "Value": {
                 "id": "69d9334c-fd48-441b-a016-e0575b82ae7e",
@@ -248,7 +256,7 @@
         }
     ],
     "script_order": [
-        
+        "349cd63a-fdfe-4d5f-ac9f-dc2bc5374e7b"
     ],
     "tutorial": ""
 }
