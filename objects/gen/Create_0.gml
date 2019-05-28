@@ -8,6 +8,7 @@ world_top = ds_grid_create(width+1, 1); //This var will store where the very top
 top_height = 25 //Make the starting height for the top of the terrain at the middle of the height of the world
 add_height = 0;
 add_prev = 0;
+chunk=0;
 
 ///Generate terrain
 
@@ -22,5 +23,5 @@ for (xx=0;xx<=width;xx++)
 
 //                              |
 //Where world gen is at for now v
-alarm[0]=1
+alarm[0]=1;
 
