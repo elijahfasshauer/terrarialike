@@ -5,7 +5,7 @@
 ys+=g;
 
 //Is he grounded???
-if place_meeting(x,y+1,obj_block_parent) 
+if place_meeting(x,y+1,obj_block_parent) //checks to see if the player is touchiung the ground
 {
 	grounded = true;
 }
@@ -22,43 +22,64 @@ else
 
 
 
-//MOVEMENT
-if keyboard_check(vk_up)
+//*********************************Movement*********************************\\
+//Jumping
+if keyboard_check(vk_space)
 {
 	if grounded
 	{
 	ys = -5;
 	}
-	
 }
-if keyboard_check(vk_down)
+if keyboard_check(vk_tab)
 {
 	
+	
+}
+//crouching
+if keyboard_check(vk_shift)
+{
+	crouching = true;
+	sprite_index = sprite3;
+	if grounded
+	{
+		cs = 2; //makes you go half the speed when crouching when on the ground
+	}
+	else
+	{
+		cs = 1;//not on the ground can go full speed
+	}
+}
+else
+{
+	crouching = false;
+	sprite_index = sprite2;
+	cs = 1;
 }
 
 //Move left
 if keyboard_check(vk_left) && !keyboard_check(vk_right)
-//>>>>>>> master
 {
 	xs -= xa;
 	
-	if(xs <= -5)
+	if(xs <= -ms/cs)
 	{
-		xs = -5;
+		xs = -ms/cs;
 	}
 	//Look left
 	image_xscale=-1
+	
 }
 
 //Move right
 if keyboard_check(vk_right) && !keyboard_check(vk_left)
-//>>>>>>> master
+
 {   
 	xs += xa;
 	
-	if(xs >= 5)
+	if(xs >= ms/cs)
 	{
-		xs = 5;
+		xs = ms/cs;
 		
 	}
 	//Look right
