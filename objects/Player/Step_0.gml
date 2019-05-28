@@ -31,7 +31,7 @@ if keyboard_check(vk_space)
 	ys = -5;
 	}
 }
-if keyboard_check(vk_tab)
+if keyboard_check(ord("A"))
 {
 	
 	
