@@ -34,8 +34,6 @@ if keyboard_check(vk_down)
 {
 	
 }
-//<<<<<<< HEAD
-if keyboard_check(vk_left)
 //=======
 //Move left
 if keyboard_check(vk_left) && !keyboard_check(vk_right)
@@ -47,9 +45,9 @@ if keyboard_check(vk_left) && !keyboard_check(vk_right)
 	{
 		xs = -5;
 	}
+	//Look left
+	image_xscale=-1
 }
-//<<<<<<< HEAD
-if keyboard_check(vk_right)
 //=======
 //Move right
 if keyboard_check(vk_right) && !keyboard_check(vk_left)
@@ -62,6 +60,8 @@ if keyboard_check(vk_right) && !keyboard_check(vk_left)
 		xs = 5;
 		
 	}
+	//Look right
+	image_xscale=1
 }
 //Friction
 //Both keys
