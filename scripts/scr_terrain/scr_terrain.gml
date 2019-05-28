@@ -5,13 +5,31 @@ chunk=argument0;
 top_height=argument1;
 biome=argument2;
 
+
 //Selected biome for this chunk
 if biome="Forest Mountain" 
 {
 	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
 		//Set the top of terrain
-		gen.add_height=choose(choose(-2,-1,-1,0,1,1,2),gen.add_prev,gen.add_prev,gen.add_prev);
+		r=choose(2,2,2,3)
+		if r=1 {
+			gen.add_height+=choose(1,0,0,0,-1)
+		}
+		else if r=2
+		{
+			gen.add_height=gen.add_prev
+		}
+		else 
+		{
+			gen.add_height=choose(-2,1,0,0,0,-1,2)
+		}
+		if gen.add_height<-2 {
+			gen.add_height=-2
+		}
+		if gen.add_height>2 {
+			gen.add_height=2
+		}
 		top_height+=gen.add_height;
 		gen.add_prev=gen.add_height;
 		
