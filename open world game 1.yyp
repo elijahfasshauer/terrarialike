@@ -218,7 +218,7 @@
             "Key": "f72db1fb-4f4f-4ed6-8ab6-7cebfbd98c09",
             "Value": {
                 "id": "2fdbdcda-7a32-4553-9121-63f5979d9fc5",
-                "resourcePath": "objects\\obj_world_gen\\obj_world_gen.yy",
+                "resourcePath": "objects\\gen\\gen.yy",
                 "resourceType": "GMObject"
             }
         }
