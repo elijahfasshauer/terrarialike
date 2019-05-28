@@ -21,17 +21,25 @@ else
 
 
 
-
+//MOVEMENT
 if keyboard_check(vk_up)
 {
+	if grounded
+	{
+	ys = -5;
+	}
 	
 }
 if keyboard_check(vk_down)
 {
 	
 }
+//<<<<<<< HEAD
+if keyboard_check(vk_left)
+//=======
 //Move left
 if keyboard_check(vk_left) && !keyboard_check(vk_right)
+//>>>>>>> master
 {
 	xs -= xa;
 	
@@ -40,8 +48,12 @@ if keyboard_check(vk_left) && !keyboard_check(vk_right)
 		xs = -5;
 	}
 }
+//<<<<<<< HEAD
+if keyboard_check(vk_right)
+//=======
 //Move right
 if keyboard_check(vk_right) && !keyboard_check(vk_left)
+//>>>>>>> master
 {   
 	xs += xa;
 	
@@ -62,7 +74,7 @@ if keyboard_check(vk_left) && keyboard_check(vk_right)
 	{
 		xs += xa*3
 	}
-	if xs < .1 && xs > -.1
+	if xs <= .3 && xs >= -.3
 	{
 		xs = 0
 	}
@@ -77,7 +89,7 @@ if !keyboard_check(vk_left) && !keyboard_check(vk_right)
 	{
 		xs += xa*3
 	}
-	if xs < .1 && xs > -.1
+	if xs <= .3 && xs >= -.3
 	{
 		xs = 0
 	}
