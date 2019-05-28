@@ -70,7 +70,7 @@ for (xx=0;xx<=width;xx++) {
 							
 							//If there is air all around the top of the block, it will move down one to fit in better
 							world_top[# xx,0]+=1
-							world_block[# xx,world_top[# xx,0]-7]=1
+							//world_block[# xx,world_top[# xx,0]-7]=1
 							
 						}
 					}
@@ -84,7 +84,7 @@ for (xx=0;xx<=width;xx++) {
 				if world_block[# xx+1,world_top[# xx,0]+1]=0 {
 							//If there is air all around the bottom of the block, it will move up one to fit in
 							world_top[# xx,0]-=1
-							world_block[# xx,world_top[# xx,0]+7]=1
+							//world_block[# xx,world_top[# xx,0]+7]=1
 				}
 			}
 		}
