@@ -39,7 +39,7 @@ for (xx=0;xx<=width;xx++)
 		ds_grid_add(world_block,xx,yy,0)
 	}
 	//Set the top of terrain
-	add_height=choose(-2,-1,-1,0,0,0,1,1,2,add_prev,add_prev,add_prev)
+	add_height=choose(choose(-2,-1,-1,0,0,0,0,0,0,0,0,0,0,1,1,2),add_prev,add_prev)
 	
 	top_height+=add_height
 	ds_grid_set(world_block,xx,top_height,1)
