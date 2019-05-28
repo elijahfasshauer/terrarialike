@@ -131,7 +131,8 @@ if keyboard_check(ord("A")) && keyboard_check(ord("D"))
 //No keys
 if !keyboard_check(ord("A")) && !keyboard_check(ord("D")) 
 {
-	if xs>0 {
+	if xs>0 
+	{
 		xs -= xa*3;
 	}
 	if xs < 0 
@@ -168,40 +169,39 @@ if place_meeting(x,y+ys,obj_block_parent)
 	}
 	ys=0;
 }
+//*********************************AutoJump*********************************\\
+//right side
 if xs > 0
 {
-	if position_meeting(x+xs+13,y+13,obj_block_parent) 
+	if position_meeting(x+xs+13,y+13,obj_block_parent) //below
 	{
-		if !position_meeting(x+xs+13,y,obj_block_parent) 
+		if !position_meeting(x+xs+13,y,obj_block_parent) //middle
 		{
-			if !position_meeting(x+xs+13,y-13,obj_block_parent)
+			if !position_meeting(x+xs+13,y-13,obj_block_parent) //top
 			{
-				if grounded
+				if grounded //make his ypos up one block size
 				{
 					y = y -13;	
 				}
 			}
-		
 		}
-	
 	}
 }
+//left side
 if xs < 0 
 {
-	if position_meeting(x+xs-13,y+13,obj_block_parent) 
+	if position_meeting(x+xs-13,y+13,obj_block_parent) //block below him
 	{
-		if !position_meeting(x+xs-13,y,obj_block_parent) 
+		if !position_meeting(x+xs-13,y,obj_block_parent) //middle
 		{
-			if !position_meeting(x+xs-13,y-13,obj_block_parent)
+			if !position_meeting(x+xs-13,y-13,obj_block_parent) //top
 			{
-				if grounded
+				if grounded //make his ypos up one block space
 				{
 					y = y -13;	
 				}
 			}
-		
 		}
-	
 	}
 }
 
