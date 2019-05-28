@@ -5,5 +5,5 @@
 g = .2; //gravity
 ys = 0; //y speed
 grounded = false;
-xs = 0;
-xa = 0;
+xs = 0; //x speed
+xa = .1; //x acelleration spelling is hard

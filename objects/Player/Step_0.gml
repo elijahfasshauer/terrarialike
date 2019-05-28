@@ -31,20 +31,31 @@ y += ys;
 
 
 
-if keyboard_check_pressed(vk_up)
+if keyboard_check(vk_up)
 {
 	
 }
-if keyboard_check_pressed(vk_down)
+if keyboard_check(vk_down)
 {
 	
 }
-if keyboard_check_pressed(vk_left)
+if keyboard_check(vk_left)
 {
-	xs = -1;
+	xs -= xa;
+	if(xs <= -5)
+	{
+		xs = -5;
+		
+	}
 }
-if keyboard_check_pressed(vk_right)
-{
-	xs = 1;
+if keyboard_check(vk_right)
+{   
+	xs += xa;
+	if(xs >= 5)
+	{
+		xs = 5;
+		
+	}
 }
+
 x += xs;
