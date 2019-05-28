@@ -6,10 +6,14 @@
  //is he grouded???
 
 
-if place_meeting(x,y+1,obj_block_parent) {
-	
+if place_meeting(x,y+1,obj_block_parent) 
+{
+	grounded = true;
 }
-
+else 
+{
+grounded = false;
+}
 
 
 if (!grounded) //if on the ground the speed the player falls at will increase to the value of g
