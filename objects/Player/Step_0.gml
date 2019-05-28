@@ -58,4 +58,10 @@ if keyboard_check(vk_right)
 	}
 }
 
+if keyboard_check(vk_left) && keyboard_check(vk_right) {
+	if xs>0 {
+		
+	}
+}
+
 x += xs;
