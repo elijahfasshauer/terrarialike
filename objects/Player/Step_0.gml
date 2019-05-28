@@ -31,10 +31,12 @@ if keyboard_check(vk_space)
 	ys = -5;
 	}
 }
-if keyboard_check(ord("A"))
+if keyboard_check(ord("W"))
 {
-	
-	
+	if grounded
+	{
+	ys = -5;
+	}	
 }
 //crouching
 if keyboard_check(vk_shift)
@@ -58,7 +60,7 @@ else
 }
 
 //Move left
-if keyboard_check(vk_left) && !keyboard_check(vk_right)
+if keyboard_check(ord("A")) && !keyboard_check(vk_right)
 {
 	xs -= xa;
 	
@@ -69,10 +71,18 @@ if keyboard_check(vk_left) && !keyboard_check(vk_right)
 	//Look left
 	image_xscale=-1
 	
+	if grounded
+	{
+		image_speed = abs(xs)/6;
+	}
+	else
+	{
+		image_index = 0;
+		image_speed = 0;
+		
+	}
 }
-
-//Move right
-if keyboard_check(vk_right) && !keyboard_check(vk_left)
+else if keyboard_check(ord("D")) && !keyboard_check(ord("A"))
 
 {   
 	xs += xa;
@@ -84,10 +94,27 @@ if keyboard_check(vk_right) && !keyboard_check(vk_left)
 	}
 	//Look right
 	image_xscale=1
+	if grounded
+	{
+		image_speed = abs(xs)/6;
+	}
+	else
+	{
+		image_index = 0;
+		image_speed = 0;
+		
+	}
+}
+else
+{
+	
+	image_index = 0;
+	image_speed = 0;
+		
 }
 //Friction
 //Both keys
-if keyboard_check(vk_left) && keyboard_check(vk_right) 
+if keyboard_check(ord("A")) && keyboard_check(ord("D")) 
 {
 	if xs>0 {
 		xs -= xa*3;
@@ -102,7 +129,7 @@ if keyboard_check(vk_left) && keyboard_check(vk_right)
 	}
 }
 //No keys
-if !keyboard_check(vk_left) && !keyboard_check(vk_right) 
+if !keyboard_check(ord("A")) && !keyboard_check(ord("D")) 
 {
 	if xs>0 {
 		xs -= xa*3;
@@ -141,6 +168,47 @@ if place_meeting(x,y+ys,obj_block_parent)
 	}
 	ys=0;
 }
+if xs > 0
+{
+	if position_meeting(x+xs+13,y+13,obj_block_parent) 
+	{
+		if !position_meeting(x+xs+13,y,obj_block_parent) 
+		{
+			if !position_meeting(x+xs+13,y-13,obj_block_parent)
+			{
+				if grounded
+				{
+					y = y -13;	
+				}
+			}
+		
+		}
+	
+	}
+}
+if xs < 0 
+{
+	if position_meeting(x+xs-13,y+13,obj_block_parent) 
+	{
+		if !position_meeting(x+xs-13,y,obj_block_parent) 
+		{
+			if !position_meeting(x+xs-13,y-13,obj_block_parent)
+			{
+				if grounded
+				{
+					y = y -13;	
+				}
+			}
+		
+		}
+	
+	}
+}
+
+
+
+
+
 
 //Make vertical movement
 y += ys;
