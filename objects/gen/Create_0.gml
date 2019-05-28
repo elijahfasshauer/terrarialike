@@ -8,7 +8,7 @@ top_height = 200 //Make the starting height for the top of the terrain at the mi
 add_height = 0;
 add_prev = 0;
 chunk=0;
-chunk_size=26;
+chunk_size=100;
 
 
 ///Generate terrain
