@@ -21,6 +21,7 @@ else
 
 
 
+
 //MOVEMENT
 if keyboard_check(vk_up)
 {
@@ -34,7 +35,7 @@ if keyboard_check(vk_down)
 {
 	
 }
-//=======
+
 //Move left
 if keyboard_check(vk_left) && !keyboard_check(vk_right)
 //>>>>>>> master
@@ -48,7 +49,7 @@ if keyboard_check(vk_left) && !keyboard_check(vk_right)
 	//Look left
 	image_xscale=-1
 }
-//=======
+
 //Move right
 if keyboard_check(vk_right) && !keyboard_check(vk_left)
 //>>>>>>> master
