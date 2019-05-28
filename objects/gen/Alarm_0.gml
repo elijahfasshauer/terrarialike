@@ -2,11 +2,11 @@
 
 
 alarm[0]=50;
-if chunk<6 
+if chunk<20
 {
-	top_height=scr_terrain(chunk,top_height,choose("Mountain","Flat"));
+	top_height=scr_terrain(chunk,top_height,choose("Mountain","Flat","Flat"));
 } 
-else if chunk=6
+else if chunk=20
 {
 	
 	with(obj_block_parent) 

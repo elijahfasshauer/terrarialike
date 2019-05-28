@@ -8,7 +8,7 @@ biome=argument2;
 //Selected biome for this chunk
 if biome="Mountain" 
 {
-	for(xx=chunk*13;xx<chunk*13+13;xx++) 
+	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
 		//Set the top of terrain
 		gen.add_height=choose(choose(-2,-1,-1,0,1,1,2),gen.add_prev,gen.add_prev,gen.add_prev);
@@ -23,10 +23,10 @@ if biome="Mountain"
 }
 
 else if biome="Flat" {
-	for(xx=chunk*13;xx<chunk*13+13;xx++) 
+	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
 		//Set the top of terrain
-		gen.add_height=choose(choose(-2,-1,-1,0,1,1,2),gen.add_prev,gen.add_prev,gen.add_prev);
+		gen.add_height=choose(choose(-1,1),0,0,0,0,0);
 		top_height+=gen.add_height;
 		gen.add_prev=gen.add_height;
 		
