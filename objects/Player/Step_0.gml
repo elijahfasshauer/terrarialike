@@ -39,7 +39,7 @@ if keyboard_check(vk_down)
 {
 	
 }
-if keyboard_check(vk_left)
+if keyboard_check(vk_left) && !keyboard_check(vk_right)
 {
 	xs -= xa;
 	if(xs <= -5)
@@ -48,7 +48,7 @@ if keyboard_check(vk_left)
 		
 	}
 }
-if keyboard_check(vk_right)
+if keyboard_check(vk_right) && !keyboard_check(vk_left)
 {   
 	xs += xa;
 	if(xs >= 5)
@@ -60,7 +60,21 @@ if keyboard_check(vk_right)
 
 if keyboard_check(vk_left) && keyboard_check(vk_right) {
 	if xs>0 {
-		
+		xs -= xa*3;
+	}
+	if xs < 0 
+	{
+		xs += xa*3
+	}
+}
+
+if !keyboard_check(vk_left) && !keyboard_check(vk_right) {
+	if xs>0 {
+		xs -= xa*3;
+	}
+	if xs < 0 
+	{
+		xs += xa*3
 	}
 }
 
