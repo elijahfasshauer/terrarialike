@@ -4,6 +4,7 @@
 	while times!=2 {
 		for (xx=0;xx<=width;xx++) 
 		{
+			
 			//Check left of top of terrain
 			if gen.world_block[# xx-1,gen.world_top[# xx,0]]=0 
 			{
@@ -24,8 +25,10 @@
 								{
 									//If there is air all around the top of the block, it will move down one to fit in better
 									gen.world_top[# xx,0]+=1;
+									
+									block_type=gen.world_block[# xx,gen.world_top[# xx,0]-1]
+									gen.world_block[# xx,gen.world_top[# xx,0]]=block_type;
 									gen.world_block[# xx,gen.world_top[# xx,0]-1]=0;
-									gen.world_block[# xx,gen.world_top[# xx,0]]=1;
 								}
 							}
 						}
@@ -61,8 +64,10 @@
 								{
 									//If there is air all around the bottom of the block, it will move up one to fit in
 									gen.world_top[# xx,0]-=1;
+									
+									block_type=gen.world_block[# xx,gen.world_top[# xx,0]+1]
+									gen.world_block[# xx,gen.world_top[# xx,0]]=block_type;
 									gen.world_block[# xx,gen.world_top[# xx,0]+1]=0;
-									gen.world_block[# xx,gen.world_top[# xx,0]]=1;
 								}
 							}
 						}

@@ -6,7 +6,7 @@ top_height=argument1;
 biome=argument2;
 
 //Selected biome for this chunk
-if biome="Mountain" 
+if biome="Forest Mountain" 
 {
 	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
@@ -22,7 +22,7 @@ if biome="Mountain"
 	}
 }
 
-else if biome="Flat" {
+else if biome="Forest Flat" {
 	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
 		//Set the top of terrain
@@ -31,7 +31,7 @@ else if biome="Flat" {
 		gen.add_prev=gen.add_height;
 		
 		//Add to world map
-		ds_grid_set(gen.world_block,xx,top_height,1);
+		ds_grid_set(gen.world_block,xx,top_height,2);
 		ds_grid_set(gen.world_top,xx,0,top_height);
 		
 	}
