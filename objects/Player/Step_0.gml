@@ -30,16 +30,20 @@ y += ys;
 
 
 
-
+//MOVEMENT
 if keyboard_check(vk_up)
 {
+	if grounded
+	{
+	ys = -5;
+	}
 	
 }
 if keyboard_check(vk_down)
 {
 	
 }
-if keyboard_check(vk_left) && !keyboard_check(vk_right)
+if keyboard_check(vk_left)
 {
 	xs -= xa;
 	if(xs <= -5)
@@ -48,7 +52,7 @@ if keyboard_check(vk_left) && !keyboard_check(vk_right)
 		
 	}
 }
-if keyboard_check(vk_right) && !keyboard_check(vk_left)
+if keyboard_check(vk_right)
 {   
 	xs += xa;
 	if(xs >= 5)
