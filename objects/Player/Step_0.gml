@@ -98,17 +98,27 @@ if !keyboard_check(vk_left) && !keyboard_check(vk_right)
 
 //Collisions
 
+//Horizontal Collisions
+if place_meeting(x+xs,y,obj_block_parent) 
+{
+	while(!place_meeting(x+sign(xs),y,obj_block_parent)) 
+	{
+		x+=sign(xs);
+	}
+	xs=0;
+}
+
 //Make horizontal movement
 x += xs;
 
 //Vertical Collisions
 if place_meeting(x,y+ys,obj_block_parent) 
 {
-	while(!place_meeting(x,y+1,obj_block_parent)) 
+	while(!place_meeting(x,y+sign(ys),obj_block_parent)) 
 	{
-		y+=1
+		y+=sign(ys);
 	}
-	ys=0
+	ys=0;
 }
 
 //Make vertical movement
