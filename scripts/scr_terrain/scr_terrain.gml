@@ -61,7 +61,7 @@ else if biome="Forest Mound" {
 	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
 		//Set the top of terrain
-		top_height=starting_height+round(sin((.02*pi*(xx-chunk*gen.chunk_size))-(2.5*pi))*-mound_height)-mound_height;
+		top_height=starting_height+round(sin((.02*pi*(xx-chunk*gen.chunk_size))-(2.5*pi))*-mound_height)-mound_height+choose(1,-1,0,0,0,0);
 		gen.add_prev=gen.add_height;
 		
 		//Add to world map
