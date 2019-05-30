@@ -33,10 +33,9 @@ if keyboard_check(vk_space)
 }
 if keyboard_check(ord("W"))
 {
-	if grounded
-	{
+	
 	ys = -jump_speed;
-	}	
+	
 }
 //crouching
 if keyboard_check(vk_shift)

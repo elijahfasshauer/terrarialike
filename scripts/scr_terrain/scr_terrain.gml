@@ -13,7 +13,24 @@ if biome="Forest Mountain"
 	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
 		//Set the top of terrain
-		gen.add_height=choose(choose(-2,1,0,0,0,-1,2),gen.add_prev,gen.add_prev,gen.add_prev)
+		//If it is not steep
+		if gen.add_height=0 {
+			gen.add_height=choose(choose(1,1,0,0,0,-1,-1),gen.add_prev,gen.add_prev,gen.add_prev)
+		} 
+		else if gen.add_height=1 {
+			gen.add_height=choose(choose(2,0),gen.add_prev,gen.add_prev,gen.add_prev)
+		} else if gen.add_height=-1
+		{
+			gen.add_height=choose(choose(-2,0),gen.add_prev,gen.add_prev,gen.add_prev)
+		}
+		else if gen.add_height=2 //If it is steep already
+		{
+			gen.add_height=choose(1,gen.add_prev,gen.add_prev)
+		}
+		else 
+		{
+			gen.add_height=choose(-1,gen.add_prev,gen.add_prev)
+		}
 		top_height+=gen.add_height;
 		gen.add_prev=gen.add_height;
 		
@@ -39,10 +56,12 @@ else if biome="Forest Flat" {
 	}
 }
 else if biome="Forest Mound" {
+	//Set random height of mound
+	mound_height=choose(irandom_range(5,20),irandom_range(10,50))
 	for(xx=chunk*gen.chunk_size;xx<chunk*gen.chunk_size+gen.chunk_size;xx++) 
 	{
 		//Set the top of terrain
-		top_height=starting_height+round(sin(((xx-chunk*gen.chunk_size))/(gen.chunk_size/4)-(2.5*pi))*-10)-10;
+		top_height=starting_height+round(sin((.02*pi*(xx-chunk*gen.chunk_size))-(2.5*pi))*-mound_height)-mound_height;
 		gen.add_prev=gen.add_height;
 		
 		//Add to world map
