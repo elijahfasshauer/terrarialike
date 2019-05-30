@@ -28,14 +28,14 @@ if keyboard_check(vk_space)
 {
 	if grounded
 	{
-	ys = -5;
+	ys = -jump_speed;
 	}
 }
 if keyboard_check(ord("W"))
 {
 	if grounded
 	{
-	ys = -5;
+	ys = -jump_speed;
 	}	
 }
 //crouching
@@ -146,21 +146,77 @@ if !keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 
 //Collisions
 
+
+if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
+{
+	if position_meeting(x+xs+14,y+19,obj_block_parent) 
+	{
+		if !position_meeting(x+xs+14,y+6,obj_block_parent) 
+		{
+			if !position_meeting(x+xs+14,y-7,obj_block_parent)
+			{
+				ys=0
+				if !grounded {
+					y-=1
+					while((round(y+20))%13!=0) {
+						y-=1
+					}
+				}
+				else
+				{
+					y-=13
+				}
+				
+				snapped=true
+					
+			}
+		
+		}
+	
+	}
+}
+if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
+{
+	if position_meeting(x+xs-14,y+19,obj_block_parent) 
+	{
+		if !position_meeting(x+xs-14,y+6,obj_block_parent) 
+		{
+			if !position_meeting(x+xs-14,y-7,obj_block_parent)
+			{
+				ys=0
+				if !grounded {
+					y-=1
+					while((round(y+20))%13!=0) {
+						y-=1
+					}
+				}
+				else
+				{
+					y-=13
+				}
+				snapped=true
+			}
+		
+		}
+	
+	}
+}
+
 //Horizontal Collisions
-if place_meeting(x+xs,y,obj_block_parent) 
+if place_meeting(x+xs,y,obj_block_parent) && snapped=false
 {
 	while(!place_meeting(x+sign(xs),y,obj_block_parent)) 
 	{
 		x+=sign(xs);
 	}
-	xs=0;
+		xs=0;
 }
 
 //Make horizontal movement
 x += xs;
 
 //Vertical Collisions
-if place_meeting(x,y+ys,obj_block_parent) 
+if place_meeting(x,y+ys,obj_block_parent)
 {
 	while(!place_meeting(x,y+sign(ys),obj_block_parent)) 
 	{
@@ -168,47 +224,12 @@ if place_meeting(x,y+ys,obj_block_parent)
 	}
 	ys=0;
 }
-if xs > 0
-{
-	if position_meeting(x+xs+13,y+13,obj_block_parent) 
-	{
-		if !position_meeting(x+xs+13,y,obj_block_parent) 
-		{
-			if !position_meeting(x+xs+13,y-13,obj_block_parent)
-			{
-				if grounded
-				{
-					y = y -13;	
-				}
-			}
-		
-		}
-	
-	}
-}
-if xs < 0 
-{
-	if position_meeting(x+xs-13,y+13,obj_block_parent) 
-	{
-		if !position_meeting(x+xs-13,y,obj_block_parent) 
-		{
-			if !position_meeting(x+xs-13,y-13,obj_block_parent)
-			{
-				if grounded
-				{
-					y = y -13;	
-				}
-			}
-		
-		}
-	
-	}
-}
-
-
 
 
 
 
 //Make vertical movement
 y += ys;
+
+//Set back to false for next frames
+snapped=false

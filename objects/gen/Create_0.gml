@@ -26,7 +26,7 @@ for (xx=0;xx<=width;xx++)
 //Generate by chunk+biome
 for(chunk=0;chunk<=20;chunk++) 
 {
-	top_height=scr_terrain(chunk,top_height,choose("Forest Mountain","Forest Flat","Forest Flat"));
+	top_height=scr_terrain(chunk,top_height,choose("Forest Mountain","Forest Flat","Forest Mound"));
 	
 } 
 

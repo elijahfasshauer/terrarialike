@@ -10,3 +10,5 @@ xa = .1; //x acelleration spelling is hard
 ms = 5; //max speed the player can reach
 cs = 1; //crouching speed divider, this will become 2 when crouching so the the player moves half the max speed
 crouching = false; //is he coruching?
+snapped=false; //Did he snap to the y of as block while walking in the last frame?
+jump_speed=3
