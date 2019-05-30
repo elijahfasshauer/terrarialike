@@ -186,7 +186,7 @@ if xs > 0
 			if !position_meeting(x+xs+13,y-13,obj_block_parent) //top
 			{
 				if grounded //make his ypos up one block size
->>>>>>> master
+
 				{
 					y-=13
 				}
@@ -197,7 +197,7 @@ if xs > 0
 		}
 	}
 }
-<<<<<<< HEAD
+
 if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 {
 	if position_meeting(x+xs-14,y+19,obj_block_parent) 
@@ -214,7 +214,7 @@ if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 					}
 				}
 				else
-=======
+
 //left side
 if xs < 0 
 {
@@ -225,7 +225,7 @@ if xs < 0
 			if !position_meeting(x+xs-13,y-13,obj_block_parent) //top
 			{
 				if grounded //make his ypos up one block space
->>>>>>> master
+
 				{
 					y-=13
 				}
