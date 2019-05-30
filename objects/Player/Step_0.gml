@@ -131,7 +131,8 @@ if keyboard_check(ord("A")) && keyboard_check(ord("D"))
 //No keys
 if !keyboard_check(ord("A")) && !keyboard_check(ord("D")) 
 {
-	if xs>0 {
+	if xs>0 
+	{
 		xs -= xa*3;
 	}
 	if xs < 0 
@@ -145,6 +146,7 @@ if !keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 }
 
 //Collisions
+
 
 
 if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
@@ -163,6 +165,28 @@ if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 					}
 				}
 				else
+
+//Vertical Collisions
+if place_meeting(x,y+ys,obj_block_parent) 
+{
+	while(!place_meeting(x,y+sign(ys),obj_block_parent)) 
+	{
+		y+=sign(ys);
+	}
+	ys=0;
+}
+//*********************************AutoJump*********************************\\
+//right side
+if xs > 0
+{
+	if position_meeting(x+xs+13,y+13,obj_block_parent) //below
+	{
+		if !position_meeting(x+xs+13,y,obj_block_parent) //middle
+		{
+			if !position_meeting(x+xs+13,y-13,obj_block_parent) //top
+			{
+				if grounded //make his ypos up one block size
+>>>>>>> master
 				{
 					y-=13
 				}
@@ -170,11 +194,10 @@ if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 				snapped=true
 					
 			}
-		
 		}
-	
 	}
 }
+<<<<<<< HEAD
 if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 {
 	if position_meeting(x+xs-14,y+19,obj_block_parent) 
@@ -191,14 +214,24 @@ if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 					}
 				}
 				else
+=======
+//left side
+if xs < 0 
+{
+	if position_meeting(x+xs-13,y+13,obj_block_parent) //block below him
+	{
+		if !position_meeting(x+xs-13,y,obj_block_parent) //middle
+		{
+			if !position_meeting(x+xs-13,y-13,obj_block_parent) //top
+			{
+				if grounded //make his ypos up one block space
+>>>>>>> master
 				{
 					y-=13
 				}
 				snapped=true
 			}
-		
 		}
-	
 	}
 }
 
