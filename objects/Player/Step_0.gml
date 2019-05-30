@@ -41,7 +41,7 @@ if keyboard_check(ord("W"))
 if keyboard_check(vk_shift)
 {
 	crouching = true;
-	sprite_index = sprite3;
+	sprite_index = spr_player_c;
 	if grounded
 	{
 		cs = 2; //makes you go half the speed when crouching when on the ground
@@ -54,7 +54,7 @@ if keyboard_check(vk_shift)
 else
 {
 	crouching = false;
-	sprite_index = sprite2;
+	sprite_index = spr_player_1;
 	cs = 1;
 }
 

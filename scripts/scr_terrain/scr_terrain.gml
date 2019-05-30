@@ -65,7 +65,7 @@ else if biome="Forest Mound" {
 		gen.add_prev=gen.add_height;
 		
 		//Add to world map
-		ds_grid_set(gen.world_block,xx,top_height,1);
+		ds_grid_set(gen.world_block,xx,top_height,3);
 		ds_grid_set(gen.world_top,xx,0,top_height);
 		
 	}
