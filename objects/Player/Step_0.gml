@@ -145,10 +145,11 @@ if !keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 	}
 }
 
-//Collisions
 
 
 
+//*********************************AutoJump*********************************\\
+//right side
 if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 {
 	if position_meeting(x+xs+14,y+19,obj_block_parent) 
@@ -157,47 +158,22 @@ if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 		{
 			if !position_meeting(x+xs+14,y-7,obj_block_parent)
 			{
-				ys=0
+				ys=0;
 				if !grounded {
-					y-=1
+					y-=1;
 					while((round(y+20))%13!=0) {
-						y-=1
+						y-=1;
 					}
 				}
-				else
-
-//Vertical Collisions
-if place_meeting(x,y+ys,obj_block_parent) 
-{
-	while(!place_meeting(x,y+sign(ys),obj_block_parent)) 
-	{
-		y+=sign(ys);
-	}
-	ys=0;
-}
-//*********************************AutoJump*********************************\\
-//right side
-if xs > 0
-{
-	if position_meeting(x+xs+13,y+13,obj_block_parent) //below
-	{
-		if !position_meeting(x+xs+13,y,obj_block_parent) //middle
-		{
-			if !position_meeting(x+xs+13,y-13,obj_block_parent) //top
-			{
-				if grounded //make his ypos up one block size
-
+				else 
 				{
-					y-=13
+					y-=13;
 				}
-				
-				snapped=true
-					
 			}
 		}
 	}
 }
-
+//left side
 if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 {
 	if position_meeting(x+xs-14,y+19,obj_block_parent) 
@@ -206,34 +182,29 @@ if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 		{
 			if !position_meeting(x+xs-14,y-7,obj_block_parent)
 			{
-				ys=0
+				ys=0;
 				if !grounded {
-					y-=1
+					y-=1;
 					while((round(y+20))%13!=0) {
-						y-=1
+						y-=1;
 					}
 				}
-				else
-
-//left side
-if xs < 0 
-{
-	if position_meeting(x+xs-13,y+13,obj_block_parent) //block below him
-	{
-		if !position_meeting(x+xs-13,y,obj_block_parent) //middle
-		{
-			if !position_meeting(x+xs-13,y-13,obj_block_parent) //top
-			{
-				if grounded //make his ypos up one block space
-
+				else 
 				{
-					y-=13
+					y-=13;
 				}
-				snapped=true
 			}
 		}
 	}
 }
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Collisions
 
 //Horizontal Collisions
 if place_meeting(x+xs,y,obj_block_parent) && snapped=false
@@ -242,7 +213,7 @@ if place_meeting(x+xs,y,obj_block_parent) && snapped=false
 	{
 		x+=sign(xs);
 	}
-		xs=0;
+	xs=0;
 }
 
 //Make horizontal movement
@@ -258,11 +229,9 @@ if place_meeting(x,y+ys,obj_block_parent)
 	ys=0;
 }
 
-
-
-
 //Make vertical movement
 y += ys;
 
+
 //Set back to false for next frames
-snapped=false
+snapped=false;
