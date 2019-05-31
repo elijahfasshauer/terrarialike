@@ -12,3 +12,5 @@ crouching = false; //is he crouching?
 snapped = false; //Did he snap to the y of as block while walking in the last frame?
 jump_speed = 3;
 md = 1000; //Mining Distance for the player, 52 is the starting and is 3 blocks away
+d = false; //justed pressed d
+a = false; //justed pressed a

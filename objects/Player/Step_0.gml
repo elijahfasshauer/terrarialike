@@ -59,8 +59,21 @@ else
 }
 
 //Move left
-if keyboard_check(ord("A")) && !keyboard_check(vk_right)
+if keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 {
+	if(!a)
+	{
+		a = true;
+	}
+	if xs > 0 && d
+	{
+		xs -= xa*3;
+		if xs < .3
+		{
+			d = false;
+		}
+	}
+	
 	xs -= xa;
 	
 	if(xs <= -ms/cs)
@@ -84,6 +97,18 @@ if keyboard_check(ord("A")) && !keyboard_check(vk_right)
 else if keyboard_check(ord("D")) && !keyboard_check(ord("A"))
 
 {   
+	if(!d)
+	{
+		d = true;
+	}
+	if xs < 0 && a
+	{
+		xs += xa*3;
+		if xs > -.3
+		{
+			a = false;
+		}
+	}
 	xs += xa;
 	
 	if(xs >= ms/cs)
@@ -115,7 +140,8 @@ else
 //Both keys
 if keyboard_check(ord("A")) && keyboard_check(ord("D")) 
 {
-	if xs>0 {
+	if xs > 0 
+	{
 		xs -= xa*3;
 	}
 	if xs < 0 
@@ -130,7 +156,7 @@ if keyboard_check(ord("A")) && keyboard_check(ord("D"))
 //No keys
 if !keyboard_check(ord("A")) && !keyboard_check(ord("D")) 
 {
-	if xs>0 
+	if xs > 0 
 	{
 		xs -= xa*3;
 	}
