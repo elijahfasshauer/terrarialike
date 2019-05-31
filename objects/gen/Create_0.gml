@@ -32,11 +32,11 @@ for(chunk=0;chunk<=20;chunk++)
 
 
 //Do perlin noise adjustments
-scr_perlin();
+
 
 
 //Add objects into room
-for (xx=0;xx<=width;xx++)
+for (xx=0;xx<=width;xx++) 
 {
 	for (yy=0;yy<=height;yy++) 
 	{
