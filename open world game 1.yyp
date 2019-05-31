@@ -250,7 +250,7 @@
             "Key": "a592fd3a-e955-453d-9c67-ac2d66b3e3d1",
             "Value": {
                 "id": "f62b206d-6c61-49ce-95de-cc7a4d8e65c8",
-                "resourcePath": "objects\\Player\\Player.yy",
+                "resourcePath": "objects\\player\\player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -260,6 +260,14 @@
                 "id": "5b8042ad-8189-4897-b3df-dad2128b53b9",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "abc870a3-df25-4bf6-bfa4-cddf397604dd",
+            "Value": {
+                "id": "e0d1175f-efcb-401f-b855-df4073c93210",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {

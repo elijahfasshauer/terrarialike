@@ -148,11 +148,11 @@ if keyboard_check(ord("A")) && keyboard_check(ord("D"))
 {
 	if xs > 0 
 	{
-		xs -= xa*3;
+		xs -= xa;
 	}
 	if xs < 0 
 	{
-		xs += xa*3
+		xs += xa
 	}
 	if xs <= .3 && xs >= -.3
 	{
@@ -164,11 +164,11 @@ if !keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 {
 	if xs > 0 
 	{
-		xs -= xa*3;
+		xs -= xa;
 	}
 	if xs < 0 
 	{
-		xs += xa*3
+		xs += xa
 	}
 	if xs <= .3 && xs >= -.3
 	{
@@ -189,16 +189,19 @@ if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 		{
 			if !position_meeting(x+xs+14,y-7,obj_block_parent)
 			{
-				ys=0;
-				if !grounded {
-					y-=1;
-					while((round(y+20))%13!=0) {
-						y-=1;
-					}
-				}
-				else 
+				if !position_meeting(x+xs+14,y-20,obj_block_parent)
 				{
-					y-=13;
+					ys=0;
+					if !grounded {
+						y-=1;
+						while((round(y+20))%13!=0) {
+							y-=1;
+						}
+					}
+					else 
+					{
+						y-=13;
+					}
 				}
 			}
 		}
@@ -213,16 +216,19 @@ if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 		{
 			if !position_meeting(x+xs-14,y-7,obj_block_parent)
 			{
-				ys=0;
-				if !grounded {
-					y-=1;
-					while((round(y+20))%13!=0) {
-						y-=1;
-					}
-				}
-				else 
+				if !position_meeting(x+xs-14,y-20,obj_block_parent)
 				{
-					y-=13;
+					ys=0;
+					if !grounded {
+						y-=1;
+						while((round(y+20))%13!=0) {
+							y-=1;
+						}
+					}
+					else 
+					{
+						y-=13;
+					}
 				}
 			}
 		}
