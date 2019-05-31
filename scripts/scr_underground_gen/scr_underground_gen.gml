@@ -2,7 +2,7 @@
 for (xx=0;xx<width;xx++) 
 {
 	//Set layer heights
-	gen.dirt_layer_top[# xx,0]=gen.world_top[# xx,0]+choose(1,0,0,0,-1);
+	gen.dirt_layer_top[# xx,0]=gen.world_top[# xx,0]+1;
 	dirt_layer_height=10;
 	gen.stone_layer_top[# xx,0]=gen.dirt_layer_top[# xx,0]+dirt_layer_height+choose(1,0,0,0,-1);
 	stone_layer_height=20;
