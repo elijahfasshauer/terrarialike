@@ -32,7 +32,7 @@ for (xx=0;xx<width;xx++)
 	//Stone
 	
 	
-	for(yy=gen.stone_layer_top[# xx,0];yy<gen.stone_layer_top[# xx,0];yy++) 
+	for(yy=gen.stone_layer_top[# xx,0];yy<gen.bedrock_layer_top[# xx,0];yy++) 
 	{
 		gen.world_block[# xx,yy]=layer_block;
 	}
