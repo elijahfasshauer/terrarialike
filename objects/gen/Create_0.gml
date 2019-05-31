@@ -20,11 +20,12 @@ for (xx=0;xx<=width;xx++)
 	for (yy=0;yy<=height;yy++) 
 	{
 		ds_grid_add(world_block,xx,yy,0);
+		world_top[# xx,0]=0
 	}
 }
 
 
-//Generate by chunk+biome
+//Generate top by chunk+biome
 for(chunk=0;chunk<=20;chunk++) 
 {
 	top_height=scr_terrain_top(chunk,top_height,choose("Forest Mountain","Forest Flat","Forest Mound"));
@@ -32,9 +33,12 @@ for(chunk=0;chunk<=20;chunk++)
 } 
 
 
-//Do perlin noise adjustments
+//Do perlin noise adjustments (Must be done before underground is gen'd)
+scr_perlin();
 
 
+//Generate underground layers
+scr_underground_gen()
 
 //Add objects into room
 for (xx=0;xx<=width;xx++) 
@@ -55,6 +59,11 @@ for (xx=0;xx<=width;xx++)
 		{
 			
 			instance_create_depth(xx*13,yy*13,0,obj_block_3);
+		}
+		else if ds_grid_get(world_block,xx,yy)=4
+		{
+			
+			instance_create_depth(xx*13,yy*13,0,obj_block_4);
 		}
 	}
 }

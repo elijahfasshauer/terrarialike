@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "921806ec-fd19-4a09-b966-f70652394a93",
+            "Value": {
+                "id": "ea9f8766-0c90-4bbd-822e-9112b97ec241",
+                "resourcePath": "sprites\\spr_block_4\\spr_block_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "92b57fd5-db37-46de-9d86-1dfe476675b6",
             "Value": {
                 "id": "e42275ac-8f92-4acc-b69f-6b544aed9f68",
@@ -279,6 +287,14 @@
             }
         },
         {
+            "Key": "d60e5c45-cbf5-4948-8c59-056152f6972b",
+            "Value": {
+                "id": "1b893bc3-2c25-45a5-9c43-c60bb843cba3",
+                "resourcePath": "scripts\\scr_underground_gen\\scr_underground_gen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f245c0bb-9294-4ba6-b977-573a946597c1",
             "Value": {
                 "id": "356dc15e-b09e-4061-833c-46432be2745e",
@@ -301,12 +317,21 @@
                 "resourcePath": "objects\\gen\\gen.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "ff620214-80fb-4d89-ad41-c25500a47417",
+            "Value": {
+                "id": "f8ac066f-1541-411f-8ef1-3e381adaab13",
+                "resourcePath": "objects\\obj_block_4\\obj_block_4.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
         "349cd63a-fdfe-4d5f-ac9f-dc2bc5374e7b",
         "d370adec-5bdf-40a7-90f0-380219978a26",
-        "65e29d96-88e4-406b-a9e3-5e9e8b80a308"
+        "65e29d96-88e4-406b-a9e3-5e9e8b80a308",
+        "d60e5c45-cbf5-4948-8c59-056152f6972b"
     ],
     "tutorial": ""
 }
