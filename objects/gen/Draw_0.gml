@@ -3,6 +3,7 @@
 //Block width
 
 //Vertical lines
+/*
 h=0;
 for(h=0; h<width; h++) 
 {
