@@ -4,6 +4,7 @@
 chunk=argument0;
 top_height=argument1;
 biome=argument2;
+chunk_biome[# chunk,0]=biome
 starting_height=top_height;
 
 

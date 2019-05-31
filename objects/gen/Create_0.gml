@@ -9,6 +9,7 @@ add_height = 0;
 add_prev = 0;
 chunk=0;
 chunk_size=100;
+chunk_biome = ds_grid_create(width/chunk_size+1,1)
 
 
 ///Generate terrain
@@ -26,7 +27,7 @@ for (xx=0;xx<=width;xx++)
 //Generate by chunk+biome
 for(chunk=0;chunk<=20;chunk++) 
 {
-	top_height=scr_terrain(chunk,top_height,choose("Forest Mountain","Forest Flat","Forest Mound"));
+	top_height=scr_terrain_top(chunk,top_height,choose("Forest Mountain","Forest Flat","Forest Mound"));
 	
 } 
 
@@ -53,7 +54,7 @@ for (xx=0;xx<=width;xx++)
 		else if ds_grid_get(world_block,xx,yy)=3
 		{
 			
-			instance_create_depth(xx*13,yy*13,0,obj_block_2);
+			instance_create_depth(xx*13,yy*13,0,obj_block_3);
 		}
 	}
 }
