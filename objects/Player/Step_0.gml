@@ -61,19 +61,22 @@ else
 //Move left
 if keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 {
+	//* no more slip *\\
 	if(!a)
 	{
 		a = true;
 	}
 	if xs > 0 && d
 	{
-		xs -= xa*3;
+		xs -= xa*2;
 		if xs < .3
 		{
 			d = false;
 		}
 	}
 	
+	
+	//*basic movement*\\
 	xs -= xa;
 	
 	if(xs <= -ms/cs)
@@ -97,18 +100,21 @@ if keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 else if keyboard_check(ord("D")) && !keyboard_check(ord("A"))
 
 {   
+	//* no more slip *\\
 	if(!d)
 	{
 		d = true;
 	}
 	if xs < 0 && a
 	{
-		xs += xa*3;
+		xs += xa*2;
 		if xs > -.3
 		{
 			a = false;
 		}
 	}
+	
+	//*basic movement*\\
 	xs += xa;
 	
 	if(xs >= ms/cs)
