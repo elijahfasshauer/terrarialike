@@ -12,13 +12,13 @@ for (xx=0;xx<width;xx++)
 	biome_in=gen.chunk_biome[# xx/gen.chunk_size,0];
 	if biome_in="Forest Flat" 
 	{
-		layer_block=4 //Dirt for now
+		layer_block=4; //Dirt for now
 	} else if biome_in="Forest Mountain" {
-		layer_block=3
+		layer_block=3;
 	}
 	else
 	{
-		layer_block=2
+		layer_block=2;
 	}
 	
 	
@@ -27,7 +27,7 @@ for (xx=0;xx<width;xx++)
 		gen.world_block[# xx,yy]=layer_block;
 	}
 	
-	layer_block=5
+	layer_block=5;
 	
 	//Stone
 	
