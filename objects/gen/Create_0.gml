@@ -10,9 +10,11 @@ add_prev = 0;
 chunk=0;
 chunk_size=100;
 chunk_biome = ds_grid_create(width/chunk_size+1,1);
-dirt_layer_top = ds_grid_create(width+1, 1);
-stone_layer_top = ds_grid_create(width+1, 1);
+
+dirt_layer_top = ds_grid_create(width+1,1);
+stone_layer_top = ds_grid_create(width+1,1);
 bedrock_layer_top = ds_grid_create(width+1,1);
+dino_layer_top = ds_grid_create(width+1,1);
 
 ///Generate terrain
 
@@ -45,35 +47,5 @@ scr_perlin();
 scr_underground_gen()
 
 //Add objects into room
-for (xx=0;xx<=width;xx++) 
-{
-	for (yy=0;yy<=height;yy++) 
-	{
-		if ds_grid_get(world_block,xx,yy)=1 
-		{
-			
-			instance_create_depth(xx*13,yy*13,0,obj_block_parent);
-		}
-		else if ds_grid_get(world_block,xx,yy)=2
-		{
-			
-			instance_create_depth(xx*13,yy*13,0,obj_block_2);
-		}
-		else if ds_grid_get(world_block,xx,yy)=3
-		{
-			
-			instance_create_depth(xx*13,yy*13,0,obj_block_3);
-		}
-		else if ds_grid_get(world_block,xx,yy)=4
-		{
-			
-			instance_create_depth(xx*13,yy*13,0,obj_block_4);
-		}
-		else if ds_grid_get(world_block,xx,yy)=5
-		{
-			
-			instance_create_depth(xx*13,yy*13,0,obj_block_5);
-		}
-	}
-}
 
+scr_load_chunks()
