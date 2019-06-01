@@ -45,7 +45,3 @@ scr_perlin();
 
 //Generate underground layers
 scr_underground_gen()
-
-//Add objects into room
-
-scr_load_chunks()

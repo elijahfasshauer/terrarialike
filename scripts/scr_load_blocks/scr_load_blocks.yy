@@ -1,8 +1,8 @@
 {
-    "id": "65e29d96-88e4-406b-a9e3-5e9e8b80a308",
+    "id": "63bfe04c-6347-425d-9281-15e6fc0771d7",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_load_chunks",
+    "name": "scr_load_blocks",
     "IsCompatibility": false,
     "IsDnD": false
 }
