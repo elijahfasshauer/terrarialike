@@ -3,5 +3,5 @@
 
 if distance_to_point(player.x, player.y) < player.md
 {
-instance_destroy()
+	instance_destroy()
 }
