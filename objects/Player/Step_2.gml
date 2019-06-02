@@ -37,9 +37,9 @@ if chunk_in_x!=chunk_in_x_prev or chunk_in_y!=chunk_in_y_prev
 				}
 			}
 		} 
-		else             //If more to the right
+		else             //If more to the left
 		{
-			for(xx=(chunk_in_x)*ch_s;xx<(chunk_in_x+2)*ch_s+ch_s;xx++) 
+			for(xx=0;xx<(chunk_in_x+2)*ch_s+ch_s;xx++) 
 			{
 				for(yy=(chunk_in_y-2)*ch_s;yy<(chunk_in_y+2)*ch_s+ch_s;yy++) 
 				{

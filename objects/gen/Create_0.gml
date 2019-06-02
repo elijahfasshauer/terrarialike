@@ -44,4 +44,6 @@ scr_perlin();
 
 
 //Generate underground layers
-scr_underground_gen()
+scr_underground_gen();
+
+//scr_save_world();
