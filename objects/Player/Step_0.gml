@@ -5,7 +5,7 @@
 ys+=g;
 
 //Is he grounded???
-if place_meeting(x,y+1,obj_block_parent) //checks to see if the player is touchiung the ground
+if place_meeting(x,y+1,obj_block_parent) //checks to see if the player is touching the ground
 {
 	grounded = true;
 }
@@ -24,7 +24,7 @@ else
 
 //*********************************Movement*********************************\\
 //Jumping
-if keyboard_check(vk_space)
+if keyboard_check_pressed(vk_space)
 {
 	if grounded
 	{
@@ -198,13 +198,13 @@ if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 							{
 								if grounded 
 								{
-									ys=0
+									//ys=0
 									y-=13;
 									snapped=true;
 								}
 								else if !grounded 
 								{
-									ys=0;
+									//ys=0;
 									y-=1;
 									while((round(y+20))%13!=0) 
 									{
@@ -217,7 +217,7 @@ if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 							{
 								if !grounded 
 								{
-									ys=0;
+									//ys=0;
 									while((round(y+20))%13!=0) 
 									{
 										y-=1;

@@ -24,7 +24,8 @@ chunk_in_y=floor(y/13/ch_s); //What y of chunk player is in
 chunk_in_x_prev=-1;
 chunk_in_y_prev=-1;
 loaded=false;
-chunk_loaded_in=0;
+chunk_loaded_in_x=0;
+chunk_loaded_in_y=0;
 
 //View
 instance_create_depth(x,y,0,obj_camera);
