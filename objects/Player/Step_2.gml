@@ -54,17 +54,18 @@ if chunk_in_x!=chunk_in_x_prev or chunk_in_y!=chunk_in_y_prev
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 //Previous chunk
 chunk_in_x_prev=chunk_in_x;
 chunk_in_y_prev=chunk_in_y;
+
+
+
+
+
+
+
+
+
+
+
+
