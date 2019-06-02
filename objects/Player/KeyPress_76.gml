@@ -1,6 +1,6 @@
 /// @description Load world
-with(obj_block_parent) 
-{
-	instance_destroy()
-}
 scr_load_world()
+
+//Trick code into thinking it needs to generate chunks
+loaded=false
+chunk_in_x_prev=-1
