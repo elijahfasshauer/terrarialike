@@ -1,3 +1,6 @@
+
+
+
 if chunk_in_y>1 && chunk_in_y<max_ch_y-1 //Not at the very top of the world
 {
 	for(yy=(chunk_in_y-2)*ch_s;yy<(chunk_in_y+2)*ch_s+ch_s;yy++) 
