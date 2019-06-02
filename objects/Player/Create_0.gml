@@ -6,11 +6,11 @@ ys = 0; //y speed
 grounded = false;
 xs = 0; //x speed
 xa = .1; //x acceleration spelling is hard
-ms = 5; //max speed the player can reach
+ms = 10; //max speed the player can reach 5
 cs = 1; //crouching speed divider, this will become 2 when crouching so the the player moves half the max speed
 crouching = false; //is he crouching?
 snapped = false; //Did he snap to the y of as block while walking in the last frame?
-jump_speed = 3;
+jump_speed = 7;//3
 md = 1000; //Mining Distance for the player, 52 is the starting and is 3 blocks away
 d = false; //justed pressed d
 a = false; //justed pressed a
@@ -19,6 +19,8 @@ a = false; //justed pressed a
 //Chunk loading variables
 //Start with "ch"
 ch_s=75; //Chunk size
+max_ch_x=floor(gen.width/ch_s)
+max_ch_y=floor(gen.height/ch_s)
 chunk_in_x=floor(x/13/ch_s); //What x of chunk player is in
 chunk_in_y=floor(y/13/ch_s); //What y of chunk player is in
 chunk_in_x_prev=-1;

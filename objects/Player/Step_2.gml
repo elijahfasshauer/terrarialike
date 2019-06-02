@@ -8,11 +8,7 @@ chunk_in_y=floor(y/13/ch_s);
 if chunk_in_x!=chunk_in_x_prev or chunk_in_y!=chunk_in_y_prev 
 {
 	//If a whole chunk away from where it loaded last
-	if abs(chunk_in_x-chunk_loaded_in_x) >= 2 
-	{
-		loaded=false;
-	}
-	if abs(chunk_in_y-chunk_loaded_in_y) >=2
+	if abs(chunk_in_x-chunk_loaded_in_x) >= 2 or abs(chunk_in_y-chunk_loaded_in_y) >= 2
 	{
 		loaded=false;
 	}
@@ -20,36 +16,35 @@ if chunk_in_x!=chunk_in_x_prev or chunk_in_y!=chunk_in_y_prev
 	
 	if loaded=false 
 	{
+		//Delete existing blocks
 		with(obj_block_parent) 
 		{
 			instance_destroy()
 		}
-		if chunk_in_x>1  //Not at the very left of world
+		
+		
+		if chunk_in_x > 1 && chunk_in_x < max_ch_x-2   //Not at the very left of world
 		{ 
 			for(xx=(chunk_in_x-2)*ch_s;xx<(chunk_in_x+2)*ch_s+ch_s;xx++) 
 			{
-				for(yy=(chunk_in_y-2)*ch_s;yy<(chunk_in_y+2)*ch_s+ch_s;yy++) 
-				{
-					scr_load_blocks(xx,yy);
-					loaded=true;
-					chunk_loaded_in_x=chunk_in_x;
-					chunk_loaded_in_y=chunk_in_y;
-				}
+				scr_load_chunks()
 			}
 		} 
-		else             //If more to the left
+		else if chunk_in_x<=1            //If at the left
 		{
 			for(xx=0;xx<(chunk_in_x+2)*ch_s+ch_s;xx++) 
 			{
-				for(yy=(chunk_in_y-2)*ch_s;yy<(chunk_in_y+2)*ch_s+ch_s;yy++) 
-				{
-					scr_load_blocks(xx,yy);
-					loaded=true;
-					chunk_loaded_in_x=chunk_in_x;
-					chunk_loaded_in_y=chunk_in_y;
-				}
+				scr_load_chunks()
 			}
 		} 
+		else //if at the right
+		{
+			for(xx=(chunk_in_x-2)*ch_s;xx<=gen.width;xx++) 
+			{
+				scr_load_chunks()
+			}
+		}
+		
 	}
 }
 
