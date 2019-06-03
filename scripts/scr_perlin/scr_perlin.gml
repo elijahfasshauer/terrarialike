@@ -29,18 +29,16 @@
 									
 									block_type=gen.world_block[# xx,gen.world_top[# xx,0]-1];
 									gen.world_block[# xx,gen.world_top[# xx,0]]=block_type;
-									gen.world_block[# xx,gen.world_top[# xx,0]-1]=0;
+									block_above=gen.world_block[# xx,gen.world_top[# xx,0]-2];
+									gen.world_block[# xx,gen.world_top[# xx,0]-1]=block_above
 								}
 							}
 						}
 					}
 				}
 			}
-		}
-	
-		for (xx=0;xx<=width;xx++) 
-		{
-				//Check left of top of terrain
+			
+			//Check left of top of terrain
 			if gen.world_block[# xx-1,gen.world_top[# xx,0]]=0 
 			{
 		
@@ -67,8 +65,12 @@
 									gen.world_top[# xx,0]-=1;
 									
 									block_type=gen.world_block[# xx,gen.world_top[# xx,0]+1];
+									block_above=gen.world_block[# xx,gen.world_top[# xx,0]];
+									gen.world_block[# xx,gen.world_top[# xx,0]-1]=block_above;
 									gen.world_block[# xx,gen.world_top[# xx,0]]=block_type;
 									gen.world_block[# xx,gen.world_top[# xx,0]+1]=0;
+									
+									
 								}
 							}
 						}

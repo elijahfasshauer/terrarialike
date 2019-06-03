@@ -250,13 +250,13 @@ if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 						{
 							if grounded 
 							{
-								ys=0
+								//ys=0
 								y-=13;
 								snapped=true;
 							}
 							else if !grounded 
 							{
-								ys=0;
+								//ys=0;
 								y-=1;
 								while((round(y+20))%13!=0) 
 								{
@@ -269,7 +269,7 @@ if xs < 0 or (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 						{
 							if !grounded 
 							{
-								ys=0;
+								//ys=0;
 								while((round(y+20))%13!=0) 
 								{
 									y-=1;

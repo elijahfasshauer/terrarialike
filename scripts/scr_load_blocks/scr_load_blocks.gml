@@ -26,4 +26,8 @@ switch ds_grid_get(gen.world_block,xx,yy)
 	case 6: 
 	instance_create_depth(xx*13,yy*13,0,obj_block_6);
 	break;
+	
+	case 7: 
+	instance_create_depth(xx*13,yy*13,0,obj_block_4);
+	break;
 }

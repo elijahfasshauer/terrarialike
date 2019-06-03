@@ -39,6 +39,7 @@ if biome="Forest Mountain"
 		ds_grid_set(gen.world_block,xx,top_height,1);
 		ds_grid_set(gen.world_top,xx,0,top_height);
 		
+		
 	}
 }
 
@@ -68,6 +69,16 @@ else if biome="Forest Mound" {
 		//Add to world map
 		ds_grid_set(gen.world_block,xx,top_height,3);
 		ds_grid_set(gen.world_top,xx,0,top_height);
+		
+		//trees
+		rock=irandom(40)
+		if rock=1 {
+			ds_grid_set(gen.world_block,xx,top_height-1,5)
+		}
+		else if rock=2 {
+			ds_grid_set(gen.world_block,xx,top_height,5)
+		}
+		
 		
 	}
 }
