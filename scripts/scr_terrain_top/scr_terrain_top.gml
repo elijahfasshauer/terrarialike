@@ -72,10 +72,12 @@ else if biome="Forest Mound" {
 		
 		//trees
 		rock=irandom(40)
-		if rock=1 {
+		if rock=1 
+		{
 			ds_grid_set(gen.world_block,xx,top_height-1,5)
 		}
-		else if rock=2 {
+		else if rock=2 
+		{
 			ds_grid_set(gen.world_block,xx,top_height,5)
 		}
 		

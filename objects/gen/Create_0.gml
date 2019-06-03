@@ -16,7 +16,6 @@ stone_layer_top = ds_grid_create(width+1,1);
 bedrock_layer_top = ds_grid_create(width+1,1);
 dino_layer_top = ds_grid_create(width+1,1);
 
-///Generate terrain
 
 //Make all blocks air
 for (xx=0;xx<=width;xx++) 
@@ -31,6 +30,9 @@ for (xx=0;xx<=width;xx++)
 }
 
 
+///////////////////////////////////////////////////////////////////////////////
+///Generate terrain
+
 //Generate top by chunk+biome
 for(chunk=0;chunk<=20;chunk++) 
 {
@@ -39,11 +41,27 @@ for(chunk=0;chunk<=20;chunk++)
 } 
 
 
-//Do perlin noise adjustments (Must be done before underground is gen'd)
+//Do perlin noise adjustments (Must be done before underground and trees are gen'd)
 scr_perlin();
+
+
+//Add trees
+scr_trees();
 
 
 //Generate underground layers
 scr_underground_gen();
 
+
+//Saving the world
 //scr_save_world();
+
+
+
+
+
+
+
+
+
+
