@@ -1,4 +1,4 @@
-/// @description Draw grid and more
+/// @description Draw grid
 
 //Block width
 

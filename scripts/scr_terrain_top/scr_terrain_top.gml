@@ -15,12 +15,15 @@ if biome="Forest Mountain"
 	{
 		//Set the top of terrain
 		//If it is not steep
-		if gen.add_height=0 {
+		if gen.add_height=0 //Add_height cannot go from 0 to 2 or -2 (to prevent sudden cliffs)
+		{
 			gen.add_height=choose(choose(1,1,0,0,0,-1,-1),gen.add_prev,gen.add_prev,gen.add_prev)
 		} 
-		else if gen.add_height=1 {
+		else if gen.add_height=1 
+		{
 			gen.add_height=choose(choose(2,0),gen.add_prev,gen.add_prev,gen.add_prev)
-		} else if gen.add_height=-1
+		} 
+		else if gen.add_height=-1
 		{
 			gen.add_height=choose(choose(-2,0),gen.add_prev,gen.add_prev,gen.add_prev)
 		}
@@ -32,13 +35,13 @@ if biome="Forest Mountain"
 		{
 			gen.add_height=choose(-1,gen.add_prev,gen.add_prev)
 		}
+		
 		top_height+=gen.add_height;
 		gen.add_prev=gen.add_height;
 		
 		//Add to world map
 		ds_grid_set(gen.world_block,xx,top_height,1);
 		ds_grid_set(gen.world_top,xx,0,top_height);
-		
 		
 	}
 }
@@ -69,18 +72,6 @@ else if biome="Forest Mound" {
 		//Add to world map
 		ds_grid_set(gen.world_block,xx,top_height,3);
 		ds_grid_set(gen.world_top,xx,0,top_height);
-		
-		//trees
-		rock=irandom(40)
-		if rock=1 
-		{
-			ds_grid_set(gen.world_block,xx,top_height-1,5)
-		}
-		else if rock=2 
-		{
-			ds_grid_set(gen.world_block,xx,top_height,5)
-		}
-		
 		
 	}
 }
