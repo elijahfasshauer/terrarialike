@@ -88,7 +88,7 @@ if keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 	
 	if grounded
 	{
-		image_speed = abs(xs)/6;
+		image_speed = abs(xs)/12;
 	}
 	else
 	{
@@ -180,7 +180,8 @@ if !keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 
 
 //*********************************AutoJump*********************************\\
-if ys>=0 {
+if ys>=0 && !keyboard_check(ord("S"))
+{
 	//right side
 	if xs > 0 or (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 	{
