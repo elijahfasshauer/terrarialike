@@ -17,7 +17,7 @@ if chunk_in_x!=chunk_in_x_prev or chunk_in_y!=chunk_in_y_prev
 	if loaded=false 
 	{
 		//Delete existing blocks
-		with(obj_block_parent) 
+		with(obj_destroy_parent) 
 		{
 			instance_destroy()
 		}

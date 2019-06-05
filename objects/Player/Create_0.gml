@@ -11,7 +11,7 @@ cs = 1; //crouching speed divider, this will become 2 when crouching so the the 
 crouching = false; //is he crouching?
 snapped = false; //Did he snap to the y of as block while walking in the last frame?
 jump_speed = 7; //Starting: 3
-md = 1000; //Mining Distance for the player, 52 is the starting and is 3 blocks away
+//md = 1000; //Mining Distance for the player, 52 is the starting and is 3 blocks away
 d = false; //just pressed d
 a = false; //just pressed a
 
