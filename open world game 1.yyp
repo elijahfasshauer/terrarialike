@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0087e875-64e5-4e96-80f4-328a2734b7a5",
+            "Value": {
+                "id": "f230e8ab-7e5b-4c1e-bf57-15d71d7c39b7",
+                "resourcePath": "sprites\\spr_mine_animation\\spr_mine_animation.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "051e37d9-28af-4995-b69d-14a6ebde9af8",
             "Value": {
                 "id": "625ba6ab-0258-4d5e-be26-b1e8bf3f1257",

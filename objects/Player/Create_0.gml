@@ -28,5 +28,13 @@ loaded=false; //If the chunks around the player have been loaded and if needed t
 chunk_loaded_in_x=0; //The x chunk the player was in when the chunk was loaded
 chunk_loaded_in_y=0; //The y chunk the player was in when the chunk was loaded
 
+///Mining variables
+mine_phase=0; //The timer for mining blocks
+max_phase=0; //The max to the timer
+mouse_block=0; //What ID of block that the mouse if hovering over
+block_get=0; //Instance ID of hovering block
+block_get_prev=0; //Previous instance ID of hovering block
+mine_animation_frames=4; //starts with 0, change this when mining animation is new
+
 //View
 instance_create_depth(x,y,0,obj_camera);
