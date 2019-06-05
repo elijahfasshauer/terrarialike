@@ -13,10 +13,10 @@ chunk=0; //The chunk from left to right
 chunk_size=100; //The size of **biome** chunks (not loading) in blocks
 chunk_biome = ds_grid_create(width/chunk_size+1,1); //What biome is in each chunk
 
-dirt_layer_top = ds_grid_create(width+1,1);
-stone_layer_top = ds_grid_create(width+1,1);
-bedrock_layer_top = ds_grid_create(width+1,1);
-dino_layer_top = ds_grid_create(width+1,1);
+dirt_layer_top = ds_grid_create(width+1,1); //Where the dirt stops and stone starts
+stone_layer_top = ds_grid_create(width+1,1); //Where stone stops and bedrock starts
+bedrock_layer_top = ds_grid_create(width+1,1); //Where bedrock stops and the core starts
+dino_layer_top = ds_grid_create(width+1,1); //where the core starts and then the center of the world starts
 
 
 //Make all blocks air

@@ -7,7 +7,7 @@
 h=0;
 for(h=0; h<width; h++) 
 {
-	draw_line(h*b_w, 0, h*b_w, room_height)
+	draw_line(h*b_w, 0, h*b_w, room_height);
 }
 
 //Horizontal lines
