@@ -11,7 +11,7 @@ switch (argument0)
 	case 2:
 	case 3:
 	case 4:
-	return_block=30;
+	return_block=1;
 	break;
 	//Stone
 	case 5:
