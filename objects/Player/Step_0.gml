@@ -41,7 +41,6 @@ if keyboard_check(ord("W"))
 if keyboard_check(vk_shift)
 {
 	crouching = true;
-	sprite_index = spr_player_c;
 	if grounded
 	{
 		cs = 2; //makes you go half the speed when crouching when on the ground
@@ -54,7 +53,6 @@ if keyboard_check(vk_shift)
 else
 {
 	crouching = false;
-	sprite_index = spr_player_1;
 	cs = 1;
 }
 
@@ -84,7 +82,15 @@ if keyboard_check(ord("A")) && !keyboard_check(ord("D"))
 		xs = -ms/cs;
 	}
 	//Look left
-	image_xscale=-1
+	if crouching=false 
+	{
+		sprite_index=spr_player_1_flip
+	}
+	else 
+	{
+		sprite_index=spr_player_c_flip
+	}
+	
 	
 	if grounded
 	{
@@ -123,7 +129,15 @@ else if keyboard_check(ord("D")) && !keyboard_check(ord("A"))
 		
 	}
 	//Look right
-	image_xscale=1
+	if crouching=false 
+	{
+		sprite_index=spr_player_1
+	}
+	else 
+	{
+		sprite_index=spr_player_c
+	}
+	
 	if grounded
 	{
 		image_speed = abs(xs)/6;
