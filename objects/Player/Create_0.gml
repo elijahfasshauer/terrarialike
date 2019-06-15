@@ -18,10 +18,11 @@ a = false; //just pressed a
 ///Chunk loading variables
 //Start with "ch"
 ch_s=75; //Chunk size
+ch_y=35; //Y chunk size
 max_ch_x=floor(gen.width/ch_s); //The # of chunks in the world (x)
-max_ch_y=floor(gen.height/ch_s); //The # of chunks in the world (y)
+max_ch_y=floor(gen.height/ch_y); //The # of chunks in the world (y)
 chunk_in_x=floor(x/13/ch_s); //What x of chunk player is in
-chunk_in_y=floor(y/13/ch_s); //What y of chunk player is in
+chunk_in_y=floor(y/13/ch_y); //What y of chunk player is in
 chunk_in_x_prev=-1; //The previous x chunk in (for checking if it needs to load new chunks)
 chunk_in_y_prev=-1; //The previous y chunk in (for checking if it needs to load new chunks)
 loaded=false; //If the chunks around the player have been loaded and if needed to be loaded

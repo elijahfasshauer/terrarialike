@@ -5,9 +5,9 @@ for (xx=0;xx<width;xx++)
 	gen.dirt_layer_top[# xx,0]=gen.world_top[# xx,0]+1;
 	dirt_layer_height=10;
 	gen.stone_layer_top[# xx,0]=gen.dirt_layer_top[# xx,0]+dirt_layer_height+choose(1,0,0,0,-1);
-	stone_layer_height=20;
+	stone_layer_height=100;
 	gen.bedrock_layer_top[# xx,0]=gen.stone_layer_top[# xx,0]+stone_layer_height+choose(3,2,1,0,-1,-2,-3);
-	bedrock_layer_height=40;
+	bedrock_layer_height=400;
 	gen.dino_layer_top[# xx,0]=gen.bedrock_layer_top[# xx,0]+bedrock_layer_height+choose(1,0,0,0,-1);
 	//dino_layer_height=50;
 	

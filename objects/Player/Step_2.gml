@@ -1,7 +1,7 @@
 /// @description Load Chunks nearby
 //Variables
 chunk_in_x=floor(x/13/ch_s);
-chunk_in_y=floor(y/13/ch_s);
+chunk_in_y=floor(y/13/ch_y);
 
 
 //if chunk x he's in has changed

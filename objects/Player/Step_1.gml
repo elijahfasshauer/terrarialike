@@ -22,6 +22,8 @@ if mouse_check_button(mb_left)
 				instance_destroy()
 			}
 			gen.world_block[# floor(mouse_x/13),floor(mouse_y/13)]=0 //Maybe add a background block here? 
+			item=instance_create_depth(floor(mouse_x/13)*13+2,floor(mouse_y/13)*13+2,0,obj_item)
+			item.image_index=scr_get_item(mouse_block)
 			mine_phase=0;
 		}
 	} else {
