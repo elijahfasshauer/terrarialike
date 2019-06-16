@@ -7,7 +7,7 @@ for (xx=0;xx<width;xx++)
 	gen.stone_layer_top[# xx,0]=gen.dirt_layer_top[# xx,0]+dirt_layer_height+choose(1,0,0,0,-1);
 	stone_layer_height=100;
 	gen.bedrock_layer_top[# xx,0]=gen.stone_layer_top[# xx,0]+stone_layer_height+choose(3,2,1,0,-1,-2,-3);
-	bedrock_layer_height=400;
+	bedrock_layer_height=200;
 	gen.dino_layer_top[# xx,0]=gen.bedrock_layer_top[# xx,0]+bedrock_layer_height+choose(1,0,0,0,-1);
 	//dino_layer_height=50;
 	
