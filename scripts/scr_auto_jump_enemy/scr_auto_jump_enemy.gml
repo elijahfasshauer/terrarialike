@@ -10,9 +10,9 @@ if ys>=0
 			{
 				if !position_meeting(x+xs+(sprite_width/2),y-1,obj_block_parent)
 				{
-					if !position_meeting(x+10,y-14,obj_block_parent)
+					if !position_meeting(x+10,y-(sprite_height/2)-1,obj_block_parent)
 					{
-						if !position_meeting(x-10,y-14,obj_block_parent)
+						if !position_meeting(x-10,y-(sprite_height/2)-1,obj_block_parent)
 						{
 							if position_meeting(x+xs+(sprite_width/2),y+12,obj_block_parent) 
 							{

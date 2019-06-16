@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "54cb6263-6fff-4089-ac60-92c8a4817e43",
+            "Value": {
+                "id": "ddb13023-a749-4a70-9920-b42b513aed66",
+                "resourcePath": "objects\\obj_enemy_wormy\\obj_enemy_wormy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "54f6fdc3-1ed0-4227-8151-5b22d5d49e49",
             "Value": {
                 "id": "0710bc35-e1bb-4e62-9150-12134d373dc1",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "6598416f-9855-44f5-bfeb-78027c4f02e1",
+            "Value": {
+                "id": "94e3faeb-51b7-4798-9c46-89b6d902e5b5",
+                "resourcePath": "views\\6598416f-9855-44f5-bfeb-78027c4f02e1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "66ad53c1-c6b7-4f3e-b5ff-15799c18369d",
             "Value": {
                 "id": "ba06f061-9359-4567-9d76-bd843241989c",
@@ -276,6 +292,14 @@
                 "id": "217cc1de-f048-47ba-96bd-f409a0ab6128",
                 "resourcePath": "objects\\obj_block_2\\obj_block_2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "752c31f5-4f65-43fa-a30b-50f2b0c14c08",
+            "Value": {
+                "id": "878c26d7-f417-4484-8713-2dbaa5993a26",
+                "resourcePath": "sprites\\spr_enemy_wormy\\spr_enemy_wormy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -348,6 +372,14 @@
                 "id": "b4860658-227a-4fd2-8b69-22782e014143",
                 "resourcePath": "scripts\\scr_get_item\\scr_get_item.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8adfa3a0-5935-4412-9566-39de893c9c23",
+            "Value": {
+                "id": "88297581-faa4-4221-ba68-ac0882f8c02e",
+                "resourcePath": "views\\8adfa3a0-5935-4412-9566-39de893c9c23.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -426,7 +458,7 @@
             "Key": "aa9b182a-9e0c-4a7d-8229-566b19178d59",
             "Value": {
                 "id": "adc385e8-a099-4b2a-b485-9835a6dde38d",
-                "resourcePath": "objects\\obj_enemy_parent\\obj_enemy_parent.yy",
+                "resourcePath": "objects\\obj_enemy_run\\obj_enemy_run.yy",
                 "resourceType": "GMObject"
             }
         },
