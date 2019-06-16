@@ -6,3 +6,4 @@ tran=600;
 
 lay=layer_get_id("Background");
 back=layer_background_get_id(lay);
+
