@@ -13,8 +13,8 @@ if xs!=0
 
 if distance_to_object(player)<30
 {
-	xs=sign(player.x-x)
-	ys=sign(player.y-y)
+	xs=sign(player.x-5-x)
+	ys=sign(player.y-5-y)
 }
 else 
 {
