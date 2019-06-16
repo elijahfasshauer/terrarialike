@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "6f306998-9657-447b-b4b6-1672f209bc96",
+            "Value": {
+                "id": "b70748c0-d3d0-403b-a41d-5769fcb73936",
+                "resourcePath": "scripts\\scr_spawn_enemy\\scr_spawn_enemy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "72501f0b-ebb4-40b9-8cf0-931ba114b1be",
             "Value": {
                 "id": "217cc1de-f048-47ba-96bd-f409a0ab6128",
@@ -675,7 +683,8 @@
         "5d145f45-915e-45b0-a044-3e9e7a1f67fd",
         "4b367178-54a4-442c-ae9a-e498d697892d",
         "86a31666-34b6-4fd8-8e3d-d87ba1033446",
-        "3655aef4-f052-417a-bf67-782725850f27"
+        "3655aef4-f052-417a-bf67-782725850f27",
+        "6f306998-9657-447b-b4b6-1672f209bc96"
     ],
     "tutorial": ""
 }
