@@ -20,16 +20,21 @@ if time>=0 && time<=tran
 spawn_enemy-=1
 if spawn_enemy=0 
 {
-	side=choose(1,2)
-	if side=1
+	spawn=irandom(50)
+	if spawn=1 
 	{
-		xx=camera_get_view_x(view_camera[0])
-		instance_create_depth(xx,(gen.world_top[# floor(xx/13),0]*13)-65,0,scr_spawn_enemy())
+		side=choose(1,2)
+		if side=1
+		{
+			xx=camera_get_view_x(view_camera[0])-130
+			instance_create_depth(xx,(gen.world_top[# floor(xx/13),0]*13)-65,0,scr_spawn_enemy())
+		}
+		else 
+		{
+			xx=camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])+130
+			instance_create_depth(xx,(gen.world_top[# floor(xx/13),0]*13)-65,0,scr_spawn_enemy())
+		}
 	}
-	else 
-	{
-		xx=camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])
-		instance_create_depth(xx,(gen.world_top[# floor(xx/13),0]*13)-65,0,scr_spawn_enemy())
-	}
-	spawn_enemy=choose(600)
+	
+	spawn_enemy=irandom(100)
 }

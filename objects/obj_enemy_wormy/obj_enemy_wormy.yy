@@ -4,11 +4,20 @@
     "mvc": "1.0",
     "name": "obj_enemy_wormy",
     "eventList": [
-        
+        {
+            "id": "d2fe43d1-f7bd-44cc-81b8-100492a9e34c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "54cb6263-6fff-4089-ac60-92c8a4817e43"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "aa9b182a-9e0c-4a7d-8229-566b19178d59",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

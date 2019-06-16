@@ -46,7 +46,7 @@ ys+=.4;
 snapped=scr_auto_jump_enemy();
 
 
-if position_meeting(x+xs+(sign(xs)*(sprite_width/2)),y-(sprite_height/2)-1,obj_block_parent) 
+if position_meeting(x+xs+(sign(xs)*(sprite_width/2)),y+(sprite_height/2)-1,obj_block_parent) 
 {
 	
 		if grounded 
