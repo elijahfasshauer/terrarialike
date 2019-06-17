@@ -14,6 +14,9 @@ inv_ui_x = (gui_width *.5) - (inv_ui_width *.5 *scale);
 inv_ui_y = (gui_height *.5) - (inv_ui_height *.5 *scale);
 
 
+info_x = inv_ui_x + (9*scale);
+info_y = inv_ui_y + (9*scale);
+
 //-----player info-------\\
 
 ds_player_info = ds_grid_create(2,2);
