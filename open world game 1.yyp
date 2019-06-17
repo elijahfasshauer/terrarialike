@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "171aa530-2179-475b-83ad-2a2e8883d0b1",
+            "Value": {
+                "id": "269c96e8-11ca-4028-85cc-f2d58907cf5c",
+                "resourcePath": "sprites\\spr_enemy_big_wormy_body\\spr_enemy_big_wormy_body.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "29daacd8-6d64-4325-8ef2-634c2c7f097c",
             "Value": {
                 "id": "4272bbd7-436c-44c0-a512-680df7327b4e",
@@ -127,6 +135,22 @@
             }
         },
         {
+            "Key": "3a35a87e-86b4-4b74-a8e3-2c5fe9bffe86",
+            "Value": {
+                "id": "239fbc65-59af-47be-9bc9-1cf4eb592655",
+                "resourcePath": "objects\\obj_enemy_big_wormy_body\\obj_enemy_big_wormy_body.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3bb0d9a9-976e-4cf8-858d-6706d291b516",
+            "Value": {
+                "id": "5ca18d1b-e053-467a-8b07-f1cc388480c0",
+                "resourcePath": "objects\\obj_enemy_big_wormy_head\\obj_enemy_big_wormy_head.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3d9c20a2-dfc0-4c21-adbb-c7028cba7fb0",
             "Value": {
                 "id": "69d9334c-fd48-441b-a016-e0575b82ae7e",
@@ -140,6 +164,14 @@
                 "id": "eeb2b0db-0b5b-4e9c-a799-7e3f7a221e4b",
                 "resourcePath": "scripts\\scr_load_chunks\\scr_load_chunks.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "42c2cdb8-95bc-42e8-9a9e-9d9c307f5af0",
+            "Value": {
+                "id": "90d77d00-6f9d-406f-8b40-6055b8807736",
+                "resourcePath": "sprites\\spr_enemy_big_wormy_head\\spr_enemy_big_wormy_head.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

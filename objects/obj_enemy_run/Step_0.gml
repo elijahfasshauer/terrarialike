@@ -1,6 +1,6 @@
 /// @description Move
 
-if distance_to_object(player)<1000
+if distance_to_object(player)<1300
 {
 	see_player=true;
 }
