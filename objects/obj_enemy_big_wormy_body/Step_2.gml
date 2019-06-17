@@ -5,9 +5,9 @@
 
 if follow=head 
 {
-	//x=follow.x;
-	//y=follow.y;
-	move_towards_point(follow.x,follow.y,distance_to_point(follow.x,follow.y)*4)
+	x=follow.x;
+	y=follow.y;
+	//move_towards_point(follow.x,follow.y,distance_to_point(follow.x,follow.y)*2)
 }
 else 
 {
