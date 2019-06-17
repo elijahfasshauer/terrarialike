@@ -714,7 +714,7 @@
             "Key": "f7fb8a3f-5aa9-449f-ae52-b88519cde04a",
             "Value": {
                 "id": "66e03c56-bb40-4295-a281-dc3767b6fd47",
-                "resourcePath": "sprites\\sprite19\\sprite19.yy",
+                "resourcePath": "sprites\\spr_inv_ui\\spr_inv_ui.yy",
                 "resourceType": "GMSprite"
             }
         },
