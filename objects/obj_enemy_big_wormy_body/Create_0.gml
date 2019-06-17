@@ -7,7 +7,7 @@ if head.length<15
 	body=instance_create_depth(x,y,0,obj_enemy_big_wormy_body);
 	body.follow=self;
 }
-image_angle=90
-image_angle_prev=90
-xprev=0
-yprev=0
+image_angle=90;
+image_angle_prev=90;
+xprev=0;
+yprev=0;
