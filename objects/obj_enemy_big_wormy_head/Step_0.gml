@@ -12,19 +12,19 @@ else
 }
 image_angle=point_direction(0,0,xs,ys)-90
 
-if xs>2 
+if xs>max_xs
 {
-	xs=2
+	xs=max_xs
 }
-if xs<-2
+if xs<-max_xs
 {
-	xs=-2
+	xs=-max_xs
 }
-if ys>5 {
-	ys=5
+if ys>max_ys {
+	ys=max_ys
 }
-if ys<-5 {
-	ys=-5
+if ys<-max_ys {
+	ys=-max_ys
 }
 
 x+=xs;

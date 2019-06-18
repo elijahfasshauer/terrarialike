@@ -130,7 +130,7 @@
             "Key": "2e9c3f83-f2ac-467b-b03f-73759fa8eb07",
             "Value": {
                 "id": "a3c6a962-de74-49b1-b1a5-b2189f735f37",
-                "resourcePath": "objects\\Inventory\\Inventory.yy",
+                "resourcePath": "objects\\inventory\\inventory.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -194,7 +194,7 @@
             "Key": "45f00abb-0211-4dfa-ba20-29474a0faeec",
             "Value": {
                 "id": "d6607b3c-be79-4c5b-b1f0-aa24fc7d2ab6",
-                "resourcePath": "sprites\\spr_back_1\\spr_back_1.yy",
+                "resourcePath": "sprites\\spr_leaves_1\\spr_leaves_1.yy",
                 "resourceType": "GMSprite"
             }
         },

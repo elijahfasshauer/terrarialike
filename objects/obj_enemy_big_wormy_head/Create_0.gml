@@ -3,7 +3,10 @@
 xs=0;
 ys=0;
 length=0;
-body=instance_create_depth(x,y,0,obj_enemy_big_wormy_body);
+max_length=choose(5,10,15,20,100,150)
+body=instance_create_depth(x,y,5,obj_enemy_big_wormy_body1);
 body.follow=self;
 image_angle_prev=0;
-max_length=irandom(5)
+depth=1
+max_ys=choose(5,7,10);
+max_xs=choose(2,3,5,7);
