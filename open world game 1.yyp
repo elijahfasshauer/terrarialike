@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "2b1701f1-4023-44d1-afd0-7b9c218713a9",
+            "Value": {
+                "id": "79750d93-6380-4078-a451-ee8b301d903f",
+                "resourcePath": "objects\\obj_enemy_big_wormy_body2\\obj_enemy_big_wormy_body2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2e9c3f83-f2ac-467b-b03f-73759fa8eb07",
             "Value": {
                 "id": "a3c6a962-de74-49b1-b1a5-b2189f735f37",
@@ -146,7 +154,7 @@
             "Key": "3a35a87e-86b4-4b74-a8e3-2c5fe9bffe86",
             "Value": {
                 "id": "239fbc65-59af-47be-9bc9-1cf4eb592655",
-                "resourcePath": "objects\\obj_enemy_big_wormy_body\\obj_enemy_big_wormy_body.yy",
+                "resourcePath": "objects\\obj_enemy_big_wormy_body1\\obj_enemy_big_wormy_body1.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -2,7 +2,7 @@
     "id": "3a35a87e-86b4-4b74-a8e3-2c5fe9bffe86",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_enemy_big_wormy_body",
+    "name": "obj_enemy_big_wormy_body1",
     "eventList": [
         {
             "id": "7616b4d8-166a-4a42-9ec9-0f86071bb1b7",
