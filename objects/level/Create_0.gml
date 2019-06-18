@@ -11,3 +11,5 @@ spawn_enemy=120;
 
 wind=100;
 alarm[0]=600;
+
+depth=100

@@ -1,5 +1,5 @@
 /// @description Day and enemy spawn
-time+=1;
+time+=100;
 if time=day_time
 {
 	day+=1;
