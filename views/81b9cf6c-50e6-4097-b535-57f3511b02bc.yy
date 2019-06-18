@@ -7,7 +7,7 @@
         "f7fb8a3f-5aa9-449f-ae52-b88519cde04a"
     ],
     "filterType": "GMSprite",
-    "folderName": "Inventory ",
+    "folderName": "Inventory Sprites",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
