@@ -9,4 +9,5 @@ back=layer_background_get_id(lay);
 
 spawn_enemy=120;
 
-wind=false;
+wind=100;
+alarm[0]=600;

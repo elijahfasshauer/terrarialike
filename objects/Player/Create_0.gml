@@ -15,6 +15,9 @@ jump_speed = 7; //Starting: 3
 d = false; //just pressed d
 a = false; //just pressed a
 
+//Snap to ground
+alarm[0]=1
+
 ///Chunk loading variables
 //Start with "ch"
 ch_s=75; //Chunk size

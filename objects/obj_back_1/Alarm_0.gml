@@ -9,11 +9,6 @@ else
 {
 	image_index=0
 }
-if level.wind=false
-{
-	alarm[0]=irandom(100)
-}
-else
-{
-	alarm[0]=1
-}
+
+
+	alarm[0]=irandom_range(10,level.wind)
