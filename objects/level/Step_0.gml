@@ -36,5 +36,5 @@ if spawn_enemy=0
 		}
 	}
 	
-	spawn_enemy=irandom(100)
+	spawn_enemy=irandom(50)
 }
