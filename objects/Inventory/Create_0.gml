@@ -63,7 +63,7 @@ enum items
 
 var yy repeat(inv_slots)
 {
-	ds_inventory[# 0 , yy] = irandom_range(1, height - 1);
+	ds_inventory[# 0 , yy] = irandom_range(1, items.hieght - 1);
 	ds_inventory[# 1 , yy] = irandom_range(1,10);
 	
 	
