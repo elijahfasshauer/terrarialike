@@ -55,15 +55,16 @@ enum items
 	wood        = 4,
 	leaves      = 5,
 	test        = 6,
-	hieght      = 7, //this one just tells us how many are in the Enum when adding more keep this at the bottom
+	height      = 7, //this one just tells us how many are in the Enum when adding more keep this at the bottom
 	
 	
 	
 }
 
-var yy repeat(inv_slots)
+var yy=0;
+repeat(inv_slots)
 {
-	ds_inventory[# 0 , yy] = irandom_range(1, items.hieght - 1);
+	ds_inventory[# 0 , yy] = irandom_range(1, items.height - 1);
 	ds_inventory[# 1 , yy] = irandom_range(1,10);
 	
 	

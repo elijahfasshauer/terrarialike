@@ -7,7 +7,7 @@ draw_sprite_part_ext(inv_ui, 0, cellsize, 0, inv_ui_width, inv_ui_height, inv_ui
 
 var c = c_black;
 ds_player_info[# 0, 0] = "Name";
-ds_player_info[# 0, 1] = "level";
+ds_player_info[# 1, 0] = "player";
 
 draw_text_color(info_x, info_y, ds_player_info[# 0, 0] + ": " + ds_player_info[# 1, 0], c,c,c,c,1);
 
