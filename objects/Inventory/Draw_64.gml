@@ -1,3 +1,6 @@
+draw_set_halign(fa_left);
+
+
 if(!show_inventory) 
 {
 	exit;
@@ -22,8 +25,8 @@ inv_grid = ds_inventory;
 repeat(inv_slots)
 {
 	//x,y locations for slots
-	xx = ((cellsize + x_buffer)*ix*scale);
-	yy = ((cellsize + y_buffer)*iy*scale);
+	xx = ((cellsize + x_buffer)*ix*scale) + 377;
+	yy = ((cellsize + y_buffer)*iy*scale) + 328;
 	//item
 	iitem = inv_grid[# 0, ii]; //names 
 	sx = (iitem mod spr_inv_cols) * cellsize;
