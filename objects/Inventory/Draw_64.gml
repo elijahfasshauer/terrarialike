@@ -21,28 +21,55 @@ ix = 0; //the current x pos, 1-8
 iy = 0; //the currest y pos 1-3
 //iitem is the current item that we are on, the one we pull out of the grid
 //sx = sprite x, sy = sprite y
+
 inv_grid = ds_inventory;
 repeat(inv_slots)
 {
 	//x,y locations for slots
-	xx = ((cellsize + x_buffer)*ix*scale) + 377;
-	yy = ((cellsize + y_buffer)*iy*scale) + 328;
+	xx = ((cellsize + x_buffer)*ix*scale) + slots_x;
+	yy = ((cellsize + y_buffer)*iy*scale) + slots_y;
 	//item
 	iitem = inv_grid[# 0, ii]; //names 
 	sx = (iitem mod spr_inv_cols) * cellsize;
 	sy = (iitem div spr_inv_cols) * cellsize;
 	//draw slot and item
+	
 	draw_sprite_part_ext(
 	inv_ui, 0,0,0, cellsize,cellsize, xx, yy, scale,scale,
 	c_white, 1
 	)
-	if(iitem > 0) 
+	
+	switch(ii)
 	{
-		draw_sprite_part_ext(
-	inv_items, 0, sx, sy, cellsize, cellsize,
-		xx, yy, scale, scale, c_white, 1
-	);
+		case selected_slot: 
+			if(iitem > 0) 
+			{
+				draw_sprite_part_ext(
+			inv_items, 0, sx, sy, cellsize, cellsize,
+				xx, yy, scale, scale, c_white, 1
+			);
+			}
+			gpu_set_blendmode(bm_add);
+			draw_sprite_part_ext(
+				inv_ui, 0,0,0, cellsize,cellsize, xx, yy, scale,scale,
+				c_white, .3
+			);
+			gpu_set_blendmode(bm_normal);
+		break;
+		
+		
+		default:
+			if(iitem > 0) 
+			{
+				draw_sprite_part_ext(
+			inv_items, 0, sx, sy, cellsize, cellsize,
+				xx, yy, scale, scale, c_white, 1
+			);
+			}
+		break;
 	}
+	
+	
 	//draw item number
 	if(iitem > 0) 
 	{
