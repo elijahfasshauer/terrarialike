@@ -57,6 +57,18 @@ repeat(inv_slots)
 			gpu_set_blendmode(bm_normal);
 		break;
 		
+		case pickup_slot:
+			if(iitem > 0) 
+			{
+				draw_sprite_part_ext(
+			inv_items, 0, sx, sy, cellsize, cellsize,
+				xx, yy, scale, scale, c_white, .3
+			);
+			}
+			
+			
+			
+		break;
 		
 		default:
 			if(iitem > 0) 
@@ -80,5 +92,19 @@ repeat(inv_slots)
 	ii+=1;
 	ix = ii mod inv_slots_width;
 	iy = ii div inv_slots_width;
+}
+
+if(pickup_slot != -1)
+{
+	iitem = inv_grid[# 0, pickup_slot]; //names 
+	sx = (iitem mod spr_inv_cols) * cellsize;
+	sy = (iitem div spr_inv_cols) * cellsize;
+	draw_sprite_part_ext
+	(
+		inv_items, 0, sx, sy, cellsize, cellsize,
+		mousex, mousey, scale, scale, c_white, 1
+	);
+	var inum = inv_grid[# 1, pickup_slot];
+	draw_text_color(mousex + (cellsize*.5*scale),mousey, string(inum), c,c,c,c,1)
 }
 

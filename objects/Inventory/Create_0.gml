@@ -8,7 +8,7 @@ inv_slots_width = 8; //how many wide
 inv_slots_height = 3; // how many tall
 
 selected_slot = 0; //what slot we selected
-pickup_items = -1; //when this is -1 it means we are not picking anything up
+pickup_slot = -1; //when this is -1 it means we are not picking anything up
 m_slotx = 0; //mouse x on the inv
 m_sloty = 0; //mouse y on the inv
 
@@ -18,7 +18,7 @@ y_buffer = 4;//four between rows
 spr_inv_cols = sprite_get_width(inv_items) / cellsize;
 spr_inv_rows = sprite_get_height(inv_items) / cellsize;
 
-scale = 1;
+scale = 1.5;
 
 show_inventory = false;
 
