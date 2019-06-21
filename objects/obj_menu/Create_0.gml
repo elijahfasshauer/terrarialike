@@ -4,3 +4,4 @@ rot=0
 plus=.1
 
 cursor_sprite=player
+
