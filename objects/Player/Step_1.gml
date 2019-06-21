@@ -3,7 +3,7 @@
 if mouse_check_button(mb_left) && !inventory.show_inventory
 {
 	//Get block under the mouse
-	mouse_block=gen.world_block[# floor(mouse_x/13),floor(mouse_y/13)];
+	mouse_block=global.world_block[# floor(mouse_x/13),floor(mouse_y/13)];
 	block_get=instance_position(mouse_x,mouse_y,obj_destroy_parent)
 	
 	if mouse_block!=0 && block_get=block_get_prev
@@ -21,7 +21,7 @@ if mouse_check_button(mb_left) && !inventory.show_inventory
 			{
 				instance_destroy()
 			}
-			gen.world_block[# floor(mouse_x/13),floor(mouse_y/13)]=0 //Maybe add a background block here? 
+			global.world_block[# floor(mouse_x/13),floor(mouse_y/13)]=0 //Maybe add a background block here? 
 			item=instance_create_depth(floor(mouse_x/13)*13+2,floor(mouse_y/13)*13+2,0,obj_item)
 			item.image_index=scr_get_item(mouse_block)
 			mine_phase=0;

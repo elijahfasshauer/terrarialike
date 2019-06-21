@@ -1,5 +1,5 @@
 /// @description Draw game info
-biome_in=gen.chunk_biome[# x/13/gen.chunk_size,0];
+biome_in=global.chunk_biome[# x/13/100,0];
 draw_text(5,50,"Biome: "+string(biome_in));
 draw_text(5,100,"FPS: "+string(fps));
 draw_text(5,150,"Time: "+string(level.time)+" "+string(level.day))

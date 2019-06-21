@@ -23,7 +23,7 @@ else if chunk_in_y<=1 //If at top
 } 
 else //If at bottom
 {
-	for(yy=(player.chunk_in_y-2)*player.ch_y;yy<=gen.height;yy++) 
+	for(yy=(player.chunk_in_y-2)*player.ch_y;yy<=global.height;yy++) 
 	{
 		scr_load_blocks(xx,yy);
 		player.loaded=true;

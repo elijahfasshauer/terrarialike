@@ -1,5 +1,6 @@
 /// @description Variables
 b_w = 13; //The blocks are 13 pixels for now :)
+global.b_w=b_w;
 width = room_width/b_w; //The room width but snapped to 13x13 grid
 height = room_height/b_w;//The room height but snapped to 13x13 grid
 
@@ -55,11 +56,13 @@ scr_underground_gen();
 scr_save_world();
 
 
+global.world_block=world_block;
 
+global.world_top=world_top;
 
+global.width=width;
 
+global.height=height;
 
-
-
-
+global.chunk_biome=chunk_biome;
 
