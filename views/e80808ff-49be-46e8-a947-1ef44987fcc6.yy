@@ -7,7 +7,8 @@
         "349cd63a-fdfe-4d5f-ac9f-dc2bc5374e7b",
         "d370adec-5bdf-40a7-90f0-380219978a26",
         "dd76dcea-8fd7-41cd-8b20-81794bcae5d7",
-        "d60e5c45-cbf5-4948-8c59-056152f6972b"
+        "d60e5c45-cbf5-4948-8c59-056152f6972b",
+        "d7d7fa73-1932-47b1-8bbe-e4093cdcdcce"
     ],
     "filterType": "GMScript",
     "folderName": "World Creation Scripts",
