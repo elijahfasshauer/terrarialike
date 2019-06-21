@@ -1,6 +1,6 @@
 
 {
-    "name": "World",
+    "name": "world",
     "id": "0a0f2ae2-131f-4ac8-aaa3-1b022d7cb208",
     "creationCodeFile": "",
     "inheritCode": false,
