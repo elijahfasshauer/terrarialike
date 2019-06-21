@@ -33,8 +33,14 @@ if(nx >= 0 and nx < inv_slots_width and ny >= 0 and ny < inv_slots_height and i_
 	}
 }
 //set selected slot to mouse pos
-
+if(i_mousey>0 and i_mousey > 0 and i_mousey < (sprite_get_height(spr_inv_ui)-80)*scale and i_mousex < (sprite_get_width(spr_inv_ui)-32)*scale)
+{
 selected_slot = min(inv_slots-1, m_slotx + (m_sloty * inv_slots_width));
+}
+else
+{
+	selected_slot = -1;
+}
 #endregion
 
 //pickup Item
