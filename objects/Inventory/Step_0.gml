@@ -6,6 +6,7 @@ if(keyboard_check_pressed(ord("E")))
 
 if(!show_inventory) 
 {
+	pickup_slot = -1;
 	exit;
 }
 
@@ -84,3 +85,4 @@ else if(ss_item != items.none)
 	
 	}
 }
+
