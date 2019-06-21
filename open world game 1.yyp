@@ -279,14 +279,6 @@
             }
         },
         {
-            "Key": "48bae707-e81c-43b3-9329-717e472dc618",
-            "Value": {
-                "id": "b82a75d3-6ab5-456f-b79c-126e4cb85f16",
-                "resourcePath": "scripts\\scr_world_count_create\\scr_world_count_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "4b367178-54a4-442c-ae9a-e498d697892d",
             "Value": {
                 "id": "8d39307c-62e0-4852-a4d5-1837524e1508",
@@ -963,7 +955,6 @@
         "54f6fdc3-1ed0-4227-8151-5b22d5d49e49",
         "c43dbe7b-d563-491c-9fd5-3a9bd3b1208c",
         "5d145f45-915e-45b0-a044-3e9e7a1f67fd",
-        "48bae707-e81c-43b3-9329-717e472dc618",
         "5dd229e1-ea21-4635-a7d3-070c936bbbb3",
         "c370b8ed-b6f8-4e32-8771-1f78bac2f58c",
         "4b367178-54a4-442c-ae9a-e498d697892d",
