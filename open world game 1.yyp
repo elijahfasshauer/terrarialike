@@ -594,7 +594,7 @@
             "Key": "9a06c1a2-0451-4e24-86d9-a5f186369c5d",
             "Value": {
                 "id": "89586590-23b6-4bea-9fe2-6b4e7467bd5f",
-                "resourcePath": "objects\\Inventory\\Inventory.yy",
+                "resourcePath": "objects\\inventory\\inventory.yy",
                 "resourceType": "GMObject"
             }
         },
