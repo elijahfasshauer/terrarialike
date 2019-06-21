@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "e036f96f-b9d2-449f-8274-05a995470b35",
+            "Value": {
+                "id": "9ebfe607-0c24-4e1c-af55-3531e99161fe",
+                "resourcePath": "sprites\\spr_button_load\\spr_button_load.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e3f58323-4548-4611-bfac-b6ccbb538649",
             "Value": {
                 "id": "bb2f1ab9-2662-412f-9a70-006e71d86dd1",

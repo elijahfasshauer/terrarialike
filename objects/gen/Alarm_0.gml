@@ -52,7 +52,7 @@ scr_underground_gen();
 
 
 //Saving the world
-//scr_save_world();
+scr_save_world();
 
 
 
