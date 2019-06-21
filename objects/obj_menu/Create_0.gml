@@ -7,3 +7,7 @@ cursor_sprite = spr_mouse;
 
 //Get how many worlds there are saved
 scr_world_count_load();
+if global.world_count=0 
+{
+	scr_world_count_create();
+}

@@ -53,7 +53,8 @@ scr_underground_gen();
 
 
 //Saving the world
-scr_save_world();
+scr_save_world_menu();
+
 
 
 global.world_block=world_block;

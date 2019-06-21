@@ -1,8 +1,8 @@
 {
-    "id": "5d145f45-915e-45b0-a044-3e9e7a1f67fd",
+    "id": "c43dbe7b-d563-491c-9fd5-3a9bd3b1208c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_load_world",
+    "name": "scr_save_world_in_game",
     "IsCompatibility": false,
     "IsDnD": false
 }
