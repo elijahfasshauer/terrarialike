@@ -20,8 +20,8 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
+            "enumb": 64,
+            "eventtype": 8,
             "m_owner": "c77a3fcc-edb7-4830-8e25-55b8f4b9ff32"
         }
     ],

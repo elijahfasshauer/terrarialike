@@ -3,5 +3,5 @@
 rot=0
 plus=.1
 
-cursor_sprite=player
+cursor_sprite=spr_player_1
 
