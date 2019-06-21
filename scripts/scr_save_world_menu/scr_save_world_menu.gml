@@ -9,3 +9,4 @@ ini_close();
 
 global.world_count+=1;
 
+scr_world_count_save();
