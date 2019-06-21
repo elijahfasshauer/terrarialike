@@ -191,10 +191,26 @@
             }
         },
         {
+            "Key": "371a0eea-ee2b-4cfa-8a36-0312a583500f",
+            "Value": {
+                "id": "c4a66d68-6265-4af6-9b29-4d43143a886e",
+                "resourcePath": "objects\\obj_world_list\\obj_world_list.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a35a87e-86b4-4b74-a8e3-2c5fe9bffe86",
             "Value": {
                 "id": "239fbc65-59af-47be-9bc9-1cf4eb592655",
                 "resourcePath": "objects\\obj_enemy_big_wormy_body1\\obj_enemy_big_wormy_body1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3a6942df-761d-4ad8-acc7-463f6cc6a0ed",
+            "Value": {
+                "id": "81f546b4-928c-4334-93b2-a7562c871f95",
+                "resourcePath": "objects\\obj_button_load\\obj_button_load.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -228,6 +244,14 @@
                 "id": "eeb2b0db-0b5b-4e9c-a799-7e3f7a221e4b",
                 "resourcePath": "scripts\\scr_load_chunks\\scr_load_chunks.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "41ccc9e0-becc-421a-bdba-8d7a207b79d4",
+            "Value": {
+                "id": "016425fb-d07b-4bf5-ab2c-363c315eea2a",
+                "resourcePath": "rooms\\world_list\\world_list.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
