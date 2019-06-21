@@ -658,7 +658,7 @@
             "Key": "ac7ecdb8-2973-43bd-92e4-0a585540cf39",
             "Value": {
                 "id": "b0d72d6f-dee8-4549-b727-7b22c8e548a6",
-                "resourcePath": "sprites\\spr_button_play\\spr_button_play.yy",
+                "resourcePath": "sprites\\spr_button_new\\spr_button_new.yy",
                 "resourceType": "GMSprite"
             }
         },

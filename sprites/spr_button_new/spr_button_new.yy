@@ -2,7 +2,7 @@
     "id": "ac7ecdb8-2973-43bd-92e4-0a585540cf39",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_button_play",
+    "name": "spr_button_new",
     "For3D": false,
     "HTile": false,
     "VTile": false,
