@@ -1,6 +1,6 @@
 /// @description Mining
 
-if mouse_check_button(mb_left) && inventory.show_inventory
+if mouse_check_button(mb_left) && !inventory.show_inventory
 {
 	//Get block under the mouse
 	mouse_block=gen.world_block[# floor(mouse_x/13),floor(mouse_y/13)];
