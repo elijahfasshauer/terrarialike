@@ -1,6 +1,5 @@
 /// @description Variables
-b_w = 13; //The blocks are 13 pixels for now :)
-global.b_w=b_w;
+b_w=global.b_w;
 width = 10240/b_w; //The room width but snapped to 13x13 grid
 height = 10000/b_w;//The room height but snapped to 13x13 grid
 
