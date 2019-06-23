@@ -39,7 +39,7 @@ if chunk_in_x!=chunk_in_x_prev or chunk_in_y!=chunk_in_y_prev
 		} 
 		else //if at the right
 		{
-			for(xx=(chunk_in_x-2)*ch_s;xx<=gen.width;xx++) 
+			for(xx=(chunk_in_x-2)*ch_s;xx<=global.width;xx++) 
 			{
 				scr_load_chunks()
 			}

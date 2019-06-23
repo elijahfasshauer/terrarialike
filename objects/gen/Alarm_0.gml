@@ -1,8 +1,8 @@
 /// @description Variables
 b_w = 13; //The blocks are 13 pixels for now :)
 global.b_w=b_w;
-width = room_width/b_w; //The room width but snapped to 13x13 grid
-height = room_height/b_w;//The room height but snapped to 13x13 grid
+width = 10240/b_w; //The room width but snapped to 13x13 grid
+height = 10000/b_w;//The room height but snapped to 13x13 grid
 
 //World gen variables
 world_block = ds_grid_create(width+1, height+1); //This var will store the type of block and where it is in the world
@@ -52,8 +52,6 @@ scr_trees();
 scr_underground_gen();
 
 
-//Saving the world
-scr_save_world_menu();
 
 
 
@@ -67,3 +65,5 @@ global.height=height;
 
 global.chunk_biome=chunk_biome;
 
+//Saving the world
+scr_save_world_menu();

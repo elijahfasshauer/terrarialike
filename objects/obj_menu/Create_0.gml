@@ -5,3 +5,5 @@ plus=.1
 
 cursor_sprite = spr_mouse;
 
+global.world_loaded=1
+randomize()

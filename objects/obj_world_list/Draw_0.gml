@@ -5,12 +5,33 @@
 if global.world_count>0 {
 	for(worlds=1;worlds<=global.world_count;worlds++)
 	{
-		ini_open("world_"+string(worlds)+".ini")
+		
 		draw_set_halign(fa_center)
-		draw_text(display_get_gui_width()/2,(display_get_gui_height()/8)+display_get_gui_height()/8*worlds
-		,"world "+string(worlds))
+		
+		
+		if mouse_y>=display_get_gui_height()/8+display_get_gui_height()/8*worlds && 
+		mouse_y<display_get_gui_height()/8+display_get_gui_height()/8*(worlds+1)
+		{
+			draw_set_color(c_gray)
+			draw_text(display_get_gui_width()/2,(display_get_gui_height()/8)+display_get_gui_height()/8*worlds
+			,"world "+string(worlds))
+			if mouse_check_button_pressed(mb_left)
+			{
+				global.world_loaded=worlds;
+				scr_load_world_menu();
+				room_goto(world);
+				
+			}
+		} 
+		else 
+		{
+			draw_set_color(c_white)
+			draw_text(display_get_gui_width()/2,(display_get_gui_height()/8)+display_get_gui_height()/8*worlds
+			,"world "+string(worlds))
+		}
+		
 		draw_set_halign(fa_left)
-		ini_close()
+		
 	}
 } 
 else //If not
