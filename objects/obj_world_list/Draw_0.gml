@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Draw list of worlds
 
 //If a world already exists
 if global.world_count>0 {
@@ -13,8 +12,8 @@ if global.world_count>0 {
 		mouse_y<display_get_gui_height()/8+display_get_gui_height()/8*(worlds+1)
 		{
 			draw_set_color(c_gray)
-			draw_text(display_get_gui_width()/2,(display_get_gui_height()/8)+display_get_gui_height()/8*worlds
-			,"world "+string(worlds))
+			draw_text(display_get_gui_width()/2,display_get_gui_height()/8*worlds
+			-(scroll*(display_get_gui_height()/8)),"world "+string(worlds))
 			if mouse_check_button_pressed(mb_left)
 			{
 				global.world_loaded=worlds;
@@ -22,12 +21,13 @@ if global.world_count>0 {
 				room_goto(world);
 				
 			}
+			draw_set_color(c_white)
 		} 
 		else 
 		{
 			draw_set_color(c_white)
-			draw_text(display_get_gui_width()/2,(display_get_gui_height()/8)+display_get_gui_height()/8*worlds
-			,"world "+string(worlds))
+			draw_text(display_get_gui_width()/2,display_get_gui_height()/8*worlds
+			-(scroll*(display_get_gui_height()/8)),"world "+string(worlds))
 		}
 		
 		draw_set_halign(fa_left)
